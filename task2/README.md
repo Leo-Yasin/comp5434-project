@@ -1,19 +1,19 @@
-# GitHub最新快照入口（2026-11-08）
+# GitHub最新入口：Task2第六轮（2026-11-08）
 
-当前上传版本为第五轮语义融合，提交文件位于 `../submissions/latest/task2.csv`。
-本轮选中语义岭校准+400轮残差树。小型配置与验证清单在 `latest/`，完整模型包尚未随Git上传。
-第五轮线上分数待反馈；0.59347属于第四轮。外部预训练模型的比赛规则仍待核对。
+当前候选为冻结BERT的768维CLS+自主噪声线性锚点+64维MLP残差头，最新CSV为 `../submissions/latest/task2.csv`。
+新线上分数待反馈；此前第五轮已测RMSE=0.54604。老师允许外部预训练模型（用户转述），前提是理解模型。
+理解材料见 `docs/BERT原理与本项目答辩指南.md`，具体结果见根目录第六轮报告。
 
-先向维护者获取完整模型包并解压到 `task2/latest/model`；原始测试CSV自行下载。
-原数值环境按本目录requirements安装，语义Python3.12环境按requirements-semantic.txt安装，二者隔离。
-模型齐全后在项目根目录运行，替换语义Python路径：
+本仓库只包含源码、配置和验证证据，完整模型包仍需维护者单独提供，解压为 `task2/latest/model`。
+原数值Python按requirements.txt安装；独立Python3.12语义环境按requirements-embedding.txt安装。
+取得模型和原始测试CSV后，在项目根目录运行（语义Python路径按本机替换）：
 
 ```powershell
-python -m task2.semantic_predict --model task2/latest/model --test comp-5434-20261-project-task-2/test.csv --semantic-python .venv-semantic/Scripts/python.exe --work-dir task2_inference --output task2_prediction.csv
+python -m task2.embedding_predict --model task2/latest/model --test comp-5434-20261-project-task-2/test.csv --semantic-python .venv-semantic/Scripts/python.exe --work-dir task2_inference_round6 --output task2_prediction_round6.csv
 python -m unittest discover -s task2/tests -v
 ```
 
-下面保留开发记录与历史训练命令。它们依赖按阶段构建的本地产物，不能在缺少训练缓存和模型时直接运行所有步骤。
+下面保留历轮开发说明；其中outputs路径是当时本地训练产物，未随Git上传。
 
 ---
 
@@ -320,3 +320,45 @@ if ($extraAudit.release_channel_as_additional_candidate) {
 本机最终结果：扩展审计没有达到额外发布通道条件，保留原预选语义残差树，只有一个新上传候选。
 冻结确认风险估计0.625333→0.584974，额外复核0.590199→0.556741；均不是Kaggle实测。
 24项回归测试通过，完整原始CSV独立复现逐字节一致，旧0.59347提交保留。
+
+用户2026-11-08反馈第五轮线上RMSE=**0.54604**，成为当前已知最佳。
+同日用户转述老师允许外部预训练模型，条件是自己理解模型。旧包的规则状态是历史记录，
+不修改已校验模型哈希；新实验使用本次确认，理解材料见 `docs/BERT原理与本项目答辩指南.md`。
+
+## 第六轮：768维CLS与自主任务预测头（2026-11-08）
+
+第五轮使用冻结网络的五维logits。本轮额外取最后一层、pooler之前的CLS768维，
+结合已有59维、第五轮评分1维，共828维；只训练头，不修改BERT内部权重。
+测试身份都有历史，因此83,047条匹配支持条件的原验证记录作为本轮样本；未来冷启动输入回退第五轮。
+先登记岭回归/噪声线性头/自主MLP对照，内部选择后冻结确认，报告同预测头移除CLS的消融。
+历史验证复用、量化批组成和噪声假设局限均保留说明。
+
+下面是首次执行顺序，已有同名实验目录不能覆盖。原数值Python按requirements.txt安装；
+Python3.12语义环境按requirements-embedding.txt安装，后者新增onnx仅用于图准备和验证。
+
+```powershell
+$task2Py = 'D:/ProgramData/Anaconda3/python.exe'
+$semanticPy = 'C:/Users/Leo/.cache/comp5434-round5/venv/Scripts/python.exe'
+& $semanticPy -m pip install -r task2/requirements-embedding.txt
+& $semanticPy -X utf8 -m task2.embedding_prepare
+& $semanticPy -X utf8 -m task2.embedding_infer --encoder task2/outputs/round6_20261108/encoder.onnx --tokenizer task2/outputs/round5_20261105/external_model/tokenizer.json --input task2/outputs/round6_20261108/development_text.csv --output task2/outputs/round6_20261108/development.npz
+& $semanticPy -X utf8 -m task2.embedding_infer --encoder task2/outputs/round6_20261108/encoder.onnx --tokenizer task2/outputs/round5_20261105/external_model/tokenizer.json --input task2/outputs/round6_20261108/test_text.csv --output task2/outputs/round6_20261108/test.npz
+& $task2Py -X utf8 -m task2.embedding_train --stage develop
+& $task2Py -X utf8 -m task2.embedding_uncertainty
+& $task2Py -X utf8 -m task2.embedding_structure_ablation
+& $task2Py -X utf8 -m task2.embedding_train --stage final
+& $task2Py -X utf8 -m task2.embedding_predict --model task2/outputs/round6_20261108/model --test comp-5434-20261-project-task-2/test.csv --semantic-python $semanticPy --work-dir task2/outputs/round6_20261108/independent_inference --output task2/outputs/round6_20261108/reproduced.csv
+& $task2Py -X utf8 -m tools.finish_task2_round6
+```
+
+完整从零训练仍需按前几轮生成原词模型、统计和第五轮参数；本轮相应源码使用固定日期目录。
+独立推理只需第六轮model包、源码、原始测试CSV和两个环境，不需要训练评分或缓存。
+新机器可单独运行embedding_predict并指定新的输出/工作目录。首次输出不复用语义断点，
+本机同环境核对逐字节一致；其他硬件浮点末位不保证一致。
+如冻结确认未改善，final会拒绝创建推荐模型，应保留失败记录而不是修改确认参数。
+真实最终状态以根目录第六轮结果报告和候选清单为准。
+
+第六轮已完成：选中MLP十二轮，线性锚点正则1000，融合幅度1。
+本地风险估计0.543579→0.529699，29项测试通过，原始CSV独立复现逐字节相同。
+提交文件 `submissions/20261108_task2_round6/task2_cls_adapted.csv`，完整参数包在对应outputs/model。
+这不是新的Kaggle成绩，当前已知线上最佳仍0.54604。

@@ -19,15 +19,17 @@
       }
     },
     "task2": {
-      "source_local_path": "submissions/20261105_task2_round5/task2_semantic_noise_fusion.csv",
+      "source_local_path": "submissions/20261108_task2_round6/task2_cls_adapted.csv",
       "rows": 10000,
-      "sha256": "0be1e6c8b4d7fa2ccf16921cc97077f8f7c0c4adff409f5ef13dd20ea132a126",
+      "sha256": "77fdfbc3c6da404f91ac460d50740ba135a398b4d7d19e7202bf02a1bb50a98f",
       "submitted_file": "submissions/latest/task2.csv",
-      "method": "frozen BERT semantic features and custom nonlinear residual fusion",
+      "method": "frozen BERT CLS 768 + custom forward-noise linear anchor and MLP residual",
       "model_included": false,
       "latest_kaggle_score": null,
-      "previous_measured_best": 0.59347,
-      "external_model_rules_verified": false
+      "previous_measured_best": 0.54604,
+      "external_model_allowed_teacher_confirmation_user_report": true,
+      "condition": "understand pretrained model",
+      "tests_passed": 29
     }
   }
 }

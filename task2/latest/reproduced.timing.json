@@ -1,8 +1,8 @@
 {
   "rows": 10000,
-  "complete_inference_seconds": 372.6943672,
-  "includes_semantic_and_all_features": true,
+  "complete_inference_seconds": 252.8820622,
   "semantic_checkpoint_reused": false,
-  "sha256": "0be1e6c8b4d7fa2ccf16921cc97077f8f7c0c4adff409f5ef13dd20ea132a126",
-  "external_model_rule": "not_yet_verified"
+  "sha256": "77fdfbc3c6da404f91ac460d50740ba135a398b4d7d19e7202bf02a1bb50a98f",
+  "known_identity_rows": 10000,
+  "includes_raw_csv_all_features_and_neural_encoder": true
 }

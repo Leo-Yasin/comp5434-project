@@ -7,15 +7,15 @@
 | 任务 | 当前方案 | 最新提交 | 线上状态 |
 |---|---|---|---|
 | Task 1 | 混合高斯/类别分布与提升树、森林概率融合，第二轮最终候选 | [task1.csv](submissions/latest/task1.csv) | 用户报告0.913级别、小幅提升，精确值未提供 |
-| Task 2 | 冻结BERT上下文语义、评分噪声校正与自主非线性融合，第五轮最终候选 | [task2.csv](submissions/latest/task2.csv) | 待用户反馈；此前第四轮已测RMSE=0.59347 |
+| Task 2 | 冻结BERT的CLS768维与自主噪声MLP任务头，第六轮候选 | [task2.csv](submissions/latest/task2.csv) | 第六轮待反馈；此前第五轮已测RMSE=0.54604 |
 
 Task 1 使用Macro-F1（越大越好），Task 2 使用RMSE（越小越好）。
-Task 2第五轮的本地噪声风险估计不等于Kaggle成绩；使用外部预训练模型，比赛是否允许尚未核对。
+Task 2第六轮的本地噪声风险估计不等于Kaggle成绩。用户转述老师允许外部预训练模型，条件是理解模型；已提供中文原理/答辩指南。
 
 ## 队友阅读入口
 
 - [Task 1当前入口与执行说明](task1/README.md)、[模型设计](task1/docs/模型设计.md)、[最近优化结果](docs/第二轮优化结果-20261105.md)。
-- [Task 2当前入口与执行说明](task2/README.md)、[第五轮模型说明](task2/docs/第五轮模型说明.md)、[第五轮结果](docs/Task2第五轮优化结果-20261105.md)。
+- [Task 2当前入口与执行说明](task2/README.md)、[BERT原理与答辩指南](task2/docs/BERT原理与本项目答辩指南.md)、[第六轮结果](docs/Task2第六轮优化结果-20261108.md)。
 - [上传范围与复现边界](docs/最新上传说明.md)、[实际Kaggle记录](docs/Kaggle测评记录.md)。
 - [两个提交文件的原始来源、行数和SHA-256](submissions/latest/manifest.json)。
 

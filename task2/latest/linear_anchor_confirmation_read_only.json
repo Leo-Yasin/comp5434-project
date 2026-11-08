@@ -1,0 +1,17 @@
+{
+  "not_used_to_reselect": true,
+  "metrics": {
+    "observed_rmse": 1.192624774604881,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.28349865441977806,
+      "latent_rmse_estimate": 0.5324459168965221
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.3311142944236061,
+      "latent_rmse_estimate": 0.5754253161128785
+    },
+    "rows": 41342,
+    "nonstar_rows": 37313,
+    "explicit_title_proxy_not_used_for_selection": true
+  }
+}

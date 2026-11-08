@@ -1,0 +1,4 @@
+# 第六轮图准备/CLS推理环境，Python3.12；原Dask数值环境仍使用requirements.txt。
+-r requirements-semantic.txt
+onnx==1.19.1
+ml_dtypes==0.6.0

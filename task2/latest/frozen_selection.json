@@ -1,23 +1,19 @@
 {
-  "architecture": "tree400",
+  "family": "mlp",
+  "epochs": 12,
   "alpha": 1.0,
   "metrics": {
-    "observed_rmse": 1.246224241950053,
+    "observed_rmse": 1.220840908623197,
     "noise_model_risk": {
-      "latent_mse_estimate": 0.42871520074613984,
-      "latent_rmse_estimate": 0.654763469312499
+      "latent_mse_estimate": 0.3432723166225775,
+      "latent_rmse_estimate": 0.5858944586037468
     },
     "non_explicit_title_risk": {
-      "latent_mse_estimate": 0.45834147024394406,
-      "latent_rmse_estimate": 0.6770092098664124
+      "latent_mse_estimate": 0.37417188364393367,
+      "latent_rmse_estimate": 0.6116959078201633
     },
-    "rows": 5802,
-    "nonstar_rows": 5221,
-    "explicit_title_proxy_not_used_for_selection": true,
-    "all_identities_known_risk": {
-      "latent_mse_estimate": 0.49028957187417715,
-      "latent_rmse_estimate": 0.700206806503748
-    },
-    "all_identities_known_rows": 3083
+    "rows": 8268,
+    "nonstar_rows": 7447,
+    "explicit_title_proxy_not_used_for_selection": true
   }
 }

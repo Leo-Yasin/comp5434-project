@@ -1,42 +1,47 @@
 {
-  "inherited": {
-    "observed_rmse": 1.2371568220265028,
+  "parent": {
+    "observed_rmse": 1.2023492180052484,
     "noise_model_risk": {
-      "latent_mse_estimate": 0.3910409926519023,
-      "latent_rmse_estimate": 0.6253327055671263
+      "latent_mse_estimate": 0.2954776819728112,
+      "latent_rmse_estimate": 0.5435785885893697
     },
     "non_explicit_title_risk": {
-      "latent_mse_estimate": 0.437666871810051,
-      "latent_rmse_estimate": 0.6615639589715049
+      "latent_mse_estimate": 0.3432728906244262,
+      "latent_rmse_estimate": 0.585894948454436
     },
-    "rows": 28879,
-    "nonstar_rows": 26123,
-    "explicit_title_proxy_not_used_for_selection": true,
-    "all_identities_known_risk": {
-      "latent_mse_estimate": 0.31001946082863907,
-      "latent_rmse_estimate": 0.5567939123487604
-    },
-    "all_identities_known_rows": 15610
+    "rows": 41342,
+    "nonstar_rows": 37313,
+    "explicit_title_proxy_not_used_for_selection": true
   },
   "candidate": {
-    "observed_rmse": 1.2221237799007125,
+    "observed_rmse": 1.199935346001376,
     "noise_model_risk": {
-      "latent_mse_estimate": 0.34219445127717163,
-      "latent_rmse_estimate": 0.5849738893977847
+      "latent_mse_estimate": 0.2805809524345713,
+      "latent_rmse_estimate": 0.5296989262161774
     },
     "non_explicit_title_risk": {
-      "latent_mse_estimate": 0.3834924262735624,
-      "latent_rmse_estimate": 0.619267653178787
+      "latent_mse_estimate": 0.3286427918567084,
+      "latent_rmse_estimate": 0.5732737494920803
     },
-    "rows": 28879,
-    "nonstar_rows": 26123,
-    "explicit_title_proxy_not_used_for_selection": true,
-    "all_identities_known_risk": {
-      "latent_mse_estimate": 0.26869786598598394,
-      "latent_rmse_estimate": 0.5183607488863176
-    },
-    "all_identities_known_rows": 15610
+    "rows": 41342,
+    "nonstar_rows": 37313,
+    "explicit_title_proxy_not_used_for_selection": true
   },
-  "configuration_frozen_before_confirmation": true,
-  "historical_confirmation_reuse_disclosed": true
+  "without_cls": {
+    "observed_rmse": 1.206477765066799,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.2870236961515038,
+      "latent_rmse_estimate": 0.5357459249975718
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.338024392487564,
+      "latent_rmse_estimate": 0.5813986519485266
+    },
+    "rows": 41342,
+    "nonstar_rows": 37313,
+    "explicit_title_proxy_not_used_for_selection": true
+  },
+  "selection_frozen_before_confirmation": true,
+  "historical_validation_reuse_disclosed": true,
+  "external_model_teacher_permission_user_report": true
 }

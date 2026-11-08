@@ -10,6 +10,9 @@
 /task2/audit*/
 /task2/preparation_smoke_cache/
 /tmp/
+/task2_inference*/
+/task1_prediction*.csv
+/task2_prediction*.csv
 *.npy
 *.npz
 *.onnx
