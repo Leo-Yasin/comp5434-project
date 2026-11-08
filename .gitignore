@@ -1,0 +1,44 @@
+# 课程数据由队友各自从比赛下载，保持本地约定目录结构。
+/comp-5434-20261-project-task-1/
+/comp-5434-20261-project-task-2/
+
+# 大型训练输出、稀疏缓存、模型参数与原始逐行审计不纳入 Git。
+# 对团队有用的阶段结论已汇总在 docs/；最终 CSV 和指纹保留在 submissions/。
+/task1/outputs/
+/task2/outputs/
+/task2/cache/
+/task2/audit*/
+/task2/preparation_smoke_cache/
+/tmp/
+*.npy
+*.npz
+*.onnx
+*.safetensors
+*.pkl
+*.joblib
+*.zip
+*.7z
+
+# 项目说明 PDF 和个人注解留在本地；团队仓库通过 Markdown 说明方案。
+/*.pdf
+
+# Python 自动生成文件和本地环境。
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+.venv-*/
+venv/
+.local_deps/
+.ipynb_checkpoints/
+
+# 本地凭据不随项目共享。
+.env
+.env.*
+!.env.example
+kaggle.json
+*.pem
+*.key
+.DS_Store
+Thumbs.db

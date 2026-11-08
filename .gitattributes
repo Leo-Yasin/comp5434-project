@@ -1,0 +1,4 @@
+# 源码和说明使用LF；原始提交CSV与完整Task1模型保持逐字节一致。
+* text=auto eol=lf
+*.csv -text
+task1/latest/model/** -text

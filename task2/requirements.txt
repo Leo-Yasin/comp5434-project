@@ -1,0 +1,21 @@
+# 本机已验证的 Python 3.9 环境；建议在独立虚拟环境中安装。
+numpy==1.21.5
+pandas==1.4.4
+scipy==1.9.1
+scikit-learn==1.0.2
+dask==2022.7.0
+distributed==2022.7.0
+six==1.17.0
+cloudpickle==2.0.0
+fsspec==2025.10.0
+toolz==0.11.2
+tornado==6.1
+psutil==5.9.0
+PyYAML==6.0
+msgpack==1.0.3
+sortedcontainers==2.4.0
+tblib==1.7.0
+zict==2.1.0
+click==8.0.4
+partd==1.2.0
+locket==1.0.0

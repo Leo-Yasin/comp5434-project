@@ -1,0 +1,47 @@
+{
+  "prior_candidate_files_unchanged": true,
+  "kaggle_task2_current_best_user_report": 0.64452,
+  "new_kaggle_scores": null,
+  "task1_not_claimed_material_improvement": true,
+  "tests_passed": {
+    "task1": 14,
+    "task2": 12
+  },
+  "files": {
+    "task1_experimental_mixture.csv": {
+      "source": "task1/outputs/round2_20261105/submission.csv",
+      "sha256": "bd58fb555decd6debfe13a3b80ed13662d626b4e23ab2130771cae2b08f9f94b",
+      "records": 3300,
+      "id_order_verified": true,
+      "independent_prediction_byte_identical": true
+    },
+    "task2_context_residual.csv": {
+      "source": "task2/outputs/round2_20261105/submission_context.csv",
+      "sha256": "6e3789a897aa9156ef44b1cc2d28b78359fef0f3fc75d7054aaf77f8bd358eaa",
+      "records": 10000,
+      "id_order_verified": true,
+      "independent_prediction_byte_identical": true
+    }
+  },
+  "model_files": {
+    "task1/outputs/round2_20261105/package": {
+      "model.json": "a944662f7ad1a797333b0f872fcb2d065036d324bed68ef1adc6a44785251250",
+      "previous_model/baseline_forest.json": "96e70ee076c1347b20bb10b1f10681245735191cc447ee2330741aa75ec6ed89",
+      "previous_model/model.json": "2ad5ad05e31c7033aacc5689b47e512ed74bfc59e33359b6e150dfb11fbe498a"
+    },
+    "task2/outputs/round2_20261105/model_context": {
+      "comment.npz": "423b544bba92333c8bd462300a927c7868484b32755681c6d580f177c881cdf2",
+      "model.json": "5ffcca598d7977a94cb81659fb8f6ad97e25d0422e27a9695200d661c31a53b8",
+      "residual.npz": "75b2ca382ba710bf5900e3338ce4f94fedf1b345217eaa062d424feb503efb5a",
+      "text_pair.npz": "c8876f31af8498f64dd68922e1c60f8066916d30169da51f19e4529af2ce118f",
+      "title.npz": "69df2b10ef486e9cb0edcec8116cfb36272772519b7422e47f6f69407ffc32fc",
+      "user_parent.npz": "28cc0a022602169febf3db71b76dccd1879398d6a3e324e33d231b8bd0fcc6ba",
+      "user_product.npz": "1c6c9c864089d945a684c4b138387eb7f076263c028bdb16f53f67b0983d252a",
+      "base_model/model.json": "d23d55094b29d7bfb226c4ec335ba9e6e17abc12fdc785424218695bc4a6cdb0",
+      "base_model/parent_prod_id.npz": "ceaf56e303beac7ffac853dee263d2f71b5de86efab3d79496b983aadea68a7b",
+      "base_model/prod_id.npz": "a25c6294760cd21828f0517e05c64bfed28f107fe527b7c944dce8b5e74c85c6",
+      "base_model/user_id.npz": "4ad99aa56f09a4805c5fdd37b7e019613ec0720d524760798bcca233df8e9910",
+      "base_model/weights.npz": "e333fee26dd7085caf4aa00f0a9a6c68d9545cfdfa40168e189c4536c833c7db"
+    }
+  }
+}

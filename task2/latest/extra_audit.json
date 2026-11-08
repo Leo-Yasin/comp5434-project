@@ -1,0 +1,69 @@
+{
+  "tree400": {
+    "observed_rmse": 1.2114579555888851,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.3099605635170002,
+      "latent_rmse_estimate": 0.556741020149405
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.36062127419787066,
+      "latent_rmse_estimate": 0.6005175053217605
+    },
+    "rows": 9447,
+    "nonstar_rows": 8542,
+    "explicit_title_proxy_not_used_for_selection": true,
+    "all_identities_known_risk": {
+      "latent_mse_estimate": 0.22680172377242444,
+      "latent_rmse_estimate": 0.47623704577912085
+    },
+    "all_identities_known_rows": 5130
+  },
+  "channel": {
+    "observed_rmse": 1.2143496972083738,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.3071668112362005,
+      "latent_rmse_estimate": 0.5542263177044198
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.3583986659981461,
+      "latent_rmse_estimate": 0.5986640677359433
+    },
+    "rows": 9447,
+    "nonstar_rows": 8542,
+    "explicit_title_proxy_not_used_for_selection": true,
+    "all_identities_known_risk": {
+      "latent_mse_estimate": 0.22123648225106843,
+      "latent_rmse_estimate": 0.4703578236311887
+    },
+    "all_identities_known_rows": 5130
+  },
+  "baseline": {
+    "observed_rmse": 1.2241311015785348,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.3483350900365166,
+      "latent_rmse_estimate": 0.5901991952184589
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.40301660373292714,
+      "latent_rmse_estimate": 0.6348358872440397
+    },
+    "rows": 9447,
+    "nonstar_rows": 8542,
+    "explicit_title_proxy_not_used_for_selection": true,
+    "all_identities_known_risk": {
+      "latent_mse_estimate": 0.26153619086866065,
+      "latent_rmse_estimate": 0.5114060919354214
+    },
+    "all_identities_known_rows": 5130
+  },
+  "channel_minus_tree_known": {
+    "difference": -0.005879222147932073,
+    "conditional_95_interval": [
+      -0.021496369925053976,
+      0.007776910819055934
+    ],
+    "not_accounted_for": "noise error, historical reuse, external data overlap/shift"
+  },
+  "release_channel_as_additional_candidate": false,
+  "parameters_not_changed_after_extra_audit": true
+}

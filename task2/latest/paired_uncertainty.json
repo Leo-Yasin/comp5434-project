@@ -1,0 +1,21 @@
+{
+  "replicates": 500,
+  "group_count": 28710,
+  "point_difference": -0.04035881616934145,
+  "conditional_95_interval": [
+    -0.0488028914103231,
+    -0.032803689513539104
+  ],
+  "assumptions": "fixed uniform replacement noise, fixed chosen model",
+  "not_included": "noise-model error, repeated historical selection, external model data overlap/shift",
+  "not_a_kaggle_improvement_guarantee": true,
+  "all_identities_known": {
+    "rows": 15610,
+    "replicates": 500,
+    "point_difference": -0.038433163462442854,
+    "conditional_95_interval": [
+      -0.05151090950463964,
+      -0.027408756965102622
+    ]
+  }
+}

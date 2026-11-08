@@ -1,0 +1,6 @@
+# 第五轮语义推理环境：Python 3.12，与原 Python 3.9 Dask 训练环境隔离。
+# onnxruntime-directml 同时提供 CPUExecutionProvider；最终选择CPU量化权重。
+onnxruntime-directml==1.23.0
+tokenizers==0.21.4
+numpy==2.3.5
+pandas==3.0.1

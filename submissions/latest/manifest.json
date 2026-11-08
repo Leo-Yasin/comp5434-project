@@ -1,0 +1,33 @@
+{
+  "snapshot_date": "2026-11-08",
+  "only_latest_submission_per_task": true,
+  "repository": "https://github.com/Leo-Yasin/comp5434-project",
+  "tasks": {
+    "task1": {
+      "source_local_path": "submissions/20261105_round2/task1_experimental_mixture.csv",
+      "rows": 3300,
+      "sha256": "bd58fb555decd6debfe13a3b80ed13662d626b4e23ab2130771cae2b08f9f94b",
+      "submitted_file": "submissions/latest/task1.csv",
+      "method": "mixed Gaussian/categorical model and previous boosted-forest ensemble",
+      "model": "task1/latest/model",
+      "exact_latest_kaggle_score": null,
+      "user_reported_score": "0.913级别，小幅提升，精确值未提供",
+      "model_hashes": {
+        "model.json": "a944662f7ad1a797333b0f872fcb2d065036d324bed68ef1adc6a44785251250",
+        "previous_model/baseline_forest.json": "96e70ee076c1347b20bb10b1f10681245735191cc447ee2330741aa75ec6ed89",
+        "previous_model/model.json": "2ad5ad05e31c7033aacc5689b47e512ed74bfc59e33359b6e150dfb11fbe498a"
+      }
+    },
+    "task2": {
+      "source_local_path": "submissions/20261105_task2_round5/task2_semantic_noise_fusion.csv",
+      "rows": 10000,
+      "sha256": "0be1e6c8b4d7fa2ccf16921cc97077f8f7c0c4adff409f5ef13dd20ea132a126",
+      "submitted_file": "submissions/latest/task2.csv",
+      "method": "frozen BERT semantic features and custom nonlinear residual fusion",
+      "model_included": false,
+      "latest_kaggle_score": null,
+      "previous_measured_best": 0.59347,
+      "external_model_rules_verified": false
+    }
+  }
+}
