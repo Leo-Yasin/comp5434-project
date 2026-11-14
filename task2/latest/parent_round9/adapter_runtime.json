@@ -1,0 +1,10 @@
+{
+  "prefix_backend": "openvino",
+  "prefix_batch": 16,
+  "hidden_dtype": "float16",
+  "top_backend": "torch_cpu",
+  "top_batch": 16,
+  "max_length": 256,
+  "export_cls": false,
+  "top_threads": 4
+}

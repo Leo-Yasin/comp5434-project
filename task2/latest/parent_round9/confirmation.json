@@ -1,0 +1,60 @@
+{
+  "baseline": {
+    "observed_rmse": 1.1932377435323844,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.23786823436349103,
+      "latent_rmse_estimate": 0.48771737139811927
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.2806395697067717,
+      "latent_rmse_estimate": 0.5297542540714247
+    },
+    "rows": 41342,
+    "nonstar_rows": 37313,
+    "explicit_title_proxy_not_used_for_selection": true
+  },
+  "candidate": {
+    "observed_rmse": 1.201343416846832,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.23503513919373284,
+      "latent_rmse_estimate": 0.4848042276978748
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.27855806616880724,
+      "latent_rmse_estimate": 0.5277860041425949
+    },
+    "rows": 41342,
+    "nonstar_rows": 37313,
+    "explicit_title_proxy_not_used_for_selection": true
+  },
+  "without_adaptation": {
+    "observed_rmse": 1.1921392422774575,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.23393055481096653,
+      "latent_rmse_estimate": 0.48366367944157906
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.2762767056095284,
+      "latent_rmse_estimate": 0.5256203055529042
+    },
+    "rows": 41342,
+    "nonstar_rows": 37313,
+    "explicit_title_proxy_not_used_for_selection": true
+  },
+  "classifier_only": {
+    "observed_rmse": 1.1996358461997672,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.2331342059655919,
+      "latent_rmse_estimate": 0.482839731138182
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.27639770495044774,
+      "latent_rmse_estimate": 0.5257353944242747
+    },
+    "rows": 41342,
+    "nonstar_rows": 37313,
+    "explicit_title_proxy_not_used_for_selection": true
+  },
+  "frozen_before_confirmation": true,
+  "historical_validation_reuse": true
+}

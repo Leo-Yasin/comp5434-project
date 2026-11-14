@@ -1,0 +1,46 @@
+{
+  "baseline": {
+    "observed_rmse": 1.2006869194553953,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.27340992877071624,
+      "latent_rmse_estimate": 0.5228861527815747
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.321026801834186,
+      "latent_rmse_estimate": 0.5665922712446633
+    },
+    "rows": 41342,
+    "nonstar_rows": 37313,
+    "explicit_title_proxy_not_used_for_selection": true
+  },
+  "candidate": {
+    "observed_rmse": 1.1932377435323844,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.23786823436349103,
+      "latent_rmse_estimate": 0.48771737139811927
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.28063956970677195,
+      "latent_rmse_estimate": 0.5297542540714251
+    },
+    "rows": 41342,
+    "nonstar_rows": 37313,
+    "explicit_title_proxy_not_used_for_selection": true
+  },
+  "without_new_features": {
+    "observed_rmse": 1.200931503167972,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.27335707728607134,
+      "latent_rmse_estimate": 0.5228356121058237
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.32099876490702633,
+      "latent_rmse_estimate": 0.5665675289910518
+    },
+    "rows": 41342,
+    "nonstar_rows": 37313,
+    "explicit_title_proxy_not_used_for_selection": true
+  },
+  "frozen_before_confirmation": true,
+  "historical_validation_reuse": true
+}

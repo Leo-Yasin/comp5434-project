@@ -1,16 +1,18 @@
 {
+  "round": 10,
   "rows": 10000,
-  "sha256": "22ce9107fb2a0708f6e558adc553ebe87755c93f36d03febd8db8554490865cf",
   "columns": [
     "id",
     "rating"
   ],
+  "sha256": "000952138fb52c63dd65b7bcd859a86401144e8dfb18dbdeeb69983a8891b891",
   "sample_id_order_exact": true,
   "independent_raw_feature_path": true,
   "independent_byte_identical": true,
   "max_abs_difference": 0.0,
-  "old_files_unchanged": 21,
+  "round9_parent_reproduced": true,
+  "old_files_unchanged": 23,
+  "previous_measured_best": 0.50646,
   "new_kaggle_score": null,
-  "previous_measured_best": 0.53719,
-  "model": "task2/outputs/round8_20261114/model"
+  "model": "C:\\Users\\Leo\\.cache\\comp5434-title10\\model"
 }

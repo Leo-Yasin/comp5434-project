@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "choice": {
+    "learning_rate": 3e-05,
+    "epochs": 1,
+    "max_length": 256,
+    "objective": "residual_noise",
+    "route": "blend",
+    "alpha": 0.75,
+    "metrics": {
+      "observed_rmse": 1.2209534620169848,
+      "noise_model_risk": {
+        "latent_mse_estimate": 0.29619909823632007,
+        "latent_rmse_estimate": 0.5442417645094136
+      },
+      "non_explicit_title_risk": {
+        "latent_mse_estimate": 0.321986595914242,
+        "latent_rmse_estimate": 0.5674386274428646
+      },
+      "rows": 8268,
+      "nonstar_rows": 7447,
+      "explicit_title_proxy_not_used_for_selection": true
+    },
+    "internal_improved": true
+  },
+  "previous_measured_best": 0.50646,
+  "new_kaggle_score": null,
+  "teacher_permits_pretrained_user_report": true,
+  "frozen_encoder_layers": 11,
+  "adapted_encoder_layers": 1,
+  "adaptation_training_rows": 83047,
+  "training_max_length": 128,
+  "inference_max_length": 256,
+  "source_revision": "06f020e0dbf909570eb886423bd3af256b855546",
+  "external_corpus_overlap": "unknown",
+  "historical_validation_reuse": true,
+  "cold_identity_fallback": "round8"
+}

@@ -1,0 +1,10 @@
+{
+  "rows": 16,
+  "course_labels_used": false,
+  "logit_mae": 1.0933727025985718e-06,
+  "cls_relative_rmse": 8.875895218807273e-07,
+  "argmax_agreement": 1.0,
+  "accepted": true,
+  "source_revision": "06f020e0dbf909570eb886423bd3af256b855546",
+  "cpu_reference": "original FP32 ONNX/OpenVINO"
+}

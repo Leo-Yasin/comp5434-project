@@ -1,0 +1,8 @@
+{
+  "rows": 16,
+  "rating_mae": 1.0853589374471007e-08,
+  "rating_max_error": 1.0229971403319382e-07,
+  "labels_used_for_acceptance": false,
+  "weights": "actual final title residual head",
+  "accepted": true
+}

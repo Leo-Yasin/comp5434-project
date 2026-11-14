@@ -1,0 +1,32 @@
+{
+  "learning_rates": [
+    1e-05,
+    3e-05
+  ],
+  "snapshots": [
+    1,
+    2
+  ],
+  "planned_epochs": 2,
+  "direct_alphas": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "noise_head_ridges": [
+    100.0,
+    1000.0
+  ],
+  "candidate_count": 24,
+  "effective_batch": 64,
+  "micro_batch": 16,
+  "weight_decay": 0.01,
+  "classifier_lr_multiplier": 5,
+  "seed": 5434,
+  "prefix_frozen_layers": 11,
+  "trainable_encoder_layers": 1,
+  "known_best_kaggle": 0.50646,
+  "historical_validation_reuse": true,
+  "confirmation_used_for_selection": false
+}

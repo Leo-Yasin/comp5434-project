@@ -1,0 +1,10 @@
+{
+  "rows": 10000,
+  "seconds": 131.27616319999998,
+  "sha256": "edc19d1de59e5f82bf6962b0a9060bfa775d9da3f45b3efbdf96e849171df9a9",
+  "training_cache_required": false,
+  "bert_rows_resumed": 10000,
+  "english_rows_resumed": 10000,
+  "prefix_rows_resumed": 10000,
+  "top_threads": 4
+}

@@ -1,0 +1,10 @@
+{
+  "rows": 128,
+  "course_labels_used": false,
+  "fp32_max_logit_error": 7.152557373046875e-06,
+  "cache_fp16_max_logit_error": 0.00029087066650390625,
+  "cache_fp16_logit_mae": 6.238867354113609e-05,
+  "cache_fp16_argmax_agreement": 1.0,
+  "cache_cls_relative_rmse": 7.448019459843636e-05,
+  "accepted": true
+}

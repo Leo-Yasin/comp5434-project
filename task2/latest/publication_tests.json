@@ -1,9 +1,9 @@
 {
-  "tests": 41,
-  "failures": 0,
-  "errors": 0,
-  "passed": true,
-  "python": "3.9.13",
-  "numpy": "1.21.5",
-  "source": "publication task2 package"
+  "numerical": 42,
+  "model_math": 7,
+  "cache_protocol": 4,
+  "total": 53,
+  "all_exit_codes": 0,
+  "actual_publication_source_used": true,
+  "numeric_six_dependency": "local compatibility path, not source package override"
 }

@@ -1,0 +1,17 @@
+{
+  "rows": 10000,
+  "columns": [
+    "id",
+    "rating"
+  ],
+  "sha256": "edc19d1de59e5f82bf6962b0a9060bfa775d9da3f45b3efbdf96e849171df9a9",
+  "sample_id_order_exact": true,
+  "independent_raw_feature_path": true,
+  "independent_byte_identical": true,
+  "max_abs_difference": 0.0,
+  "round8_parent_reproduced": true,
+  "old_files_unchanged": 22,
+  "previous_measured_best": 0.50646,
+  "new_kaggle_score": null,
+  "model": "C:\\Users\\Leo\\.cache\\comp5434-local9\\model"
+}

@@ -19,49 +19,27 @@
       }
     },
     "task2": {
+      "round": 10,
       "rows": 10000,
-      "sha256": "22ce9107fb2a0708f6e558adc553ebe87755c93f36d03febd8db8554490865cf",
       "columns": [
         "id",
         "rating"
       ],
+      "sha256": "000952138fb52c63dd65b7bcd859a86401144e8dfb18dbdeeb69983a8891b891",
       "sample_id_order_exact": true,
       "independent_raw_feature_path": true,
       "independent_byte_identical": true,
       "max_abs_difference": 0.0,
-      "old_files_unchanged": 21,
+      "round9_parent_reproduced": true,
+      "old_files_unchanged": 23,
+      "previous_measured_best": 0.50646,
       "new_kaggle_score": null,
-      "previous_measured_best": 0.53719,
-      "model": "task2/outputs/round8_20261114/model",
-      "source_local_path": "submissions/20261114_task2_round8/task2_round8.csv",
+      "model": "C:\\Users\\Leo\\.cache\\comp5434-title10\\model",
       "submitted_file": "submissions/latest/task2.csv",
+      "source_local_path": "submissions/20261114_task2_round10/task2_round10.csv",
+      "method": "冻结标题语义与第九轮正文/历史模型的自主噪声残差",
       "model_included": false,
-      "tests_passed": 41,
-      "separate_onnx_graph_test_passed": 1,
-      "latest_kaggle_score": null,
-      "method": "TF-IDF、冻结BERT/英语DeBERTa与自主噪声头",
-      "choice": {
-        "family": "residual",
-        "lexical": 40,
-        "english": true,
-        "ridge": 1000.0,
-        "alpha": 1.0,
-        "metrics": {
-          "observed_rmse": 1.2146446573372331,
-          "noise_model_risk": {
-            "latent_mse_estimate": 0.3047502423887176,
-            "latent_rmse_estimate": 0.5520418846326043
-          },
-          "non_explicit_title_risk": {
-            "latent_mse_estimate": 0.3312985073553885,
-            "latent_rmse_estimate": 0.5755853606159459
-          },
-          "rows": 8268,
-          "nonstar_rows": 7447,
-          "explicit_title_proxy_not_used_for_selection": true
-        },
-        "internal_improved": true
-      }
+      "latest_kaggle_score": null
     }
   }
 }

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "deterministic_algorithms": true,
+  "rows": 2,
+  "tokens": 32,
+  "course_labels_used": false,
+  "loss": 1.6821303367614746,
+  "cuda_reserved_bytes": 241172480
+}

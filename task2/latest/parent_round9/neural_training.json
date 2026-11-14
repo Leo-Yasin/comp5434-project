@@ -1,0 +1,26 @@
+{
+  "stage": "final",
+  "training_rows": 83047,
+  "learning_rate": 3e-05,
+  "classifier_lr_multiplier": 5,
+  "planned_epochs": 2,
+  "epochs_completed": 1,
+  "effective_batch": 64,
+  "micro_batch": 16,
+  "epsilon": 0.25165131324376977,
+  "seed": 5434,
+  "history": [
+    {
+      "epoch": 1,
+      "seconds": 1782.5443769000049,
+      "training_loss": 0.9789561823001833,
+      "steps": 1298
+    }
+  ],
+  "objective": "residual_noise",
+  "teacher_training_predictions_cross_fitted": null,
+  "trainable_parameters": 7682309,
+  "encoder_block_updated": true,
+  "encoder_parameter_max_change": 0.003950402140617371,
+  "seconds": 1782.5502064999964
+}

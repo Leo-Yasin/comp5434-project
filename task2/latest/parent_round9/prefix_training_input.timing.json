@@ -1,0 +1,28 @@
+{
+  "rows": 83047,
+  "rows_resumed": 0,
+  "seconds": 2956.5766511,
+  "backend": "cuda",
+  "cached_tokens": 2944295,
+  "bytes": 4522437120,
+  "fingerprint": {
+    "tokens": {
+      "input_sha256": "a3508319fff4e6fb9a12ac02e7edb4dd4d59a6ff4c1e7711eeef566a782e0492",
+      "tokenizer": {
+        "added_tokens.json": "a4b6bfe668f2b3cf6f0cd535e98a0663d2d0d4a4a15f13075ad3597d33985a23",
+        "special_tokens_map.json": "ed7c099c988dbb414b18a6980d20cb57b91b7cd119f6f6941eb364b0e892e712",
+        "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "tokenizer_config.json": "b33e0217ae36ce45263c67366d8e8f06b6f043e15b15e88c543798d3fa582c4a"
+      },
+      "max_length": 128,
+      "input": "comment",
+      "schema": 1
+    },
+    "prefix_sha256": "31a2136baec5266dccff9477000e534f37413baaf2f423376419dd2d91dcae0e",
+    "backend": "cuda",
+    "version": "2.6.0+cu124",
+    "batch_size": 8,
+    "dtype": "float16",
+    "schema": 1
+  }
+}

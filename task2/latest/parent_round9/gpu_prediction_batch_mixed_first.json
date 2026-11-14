@@ -1,0 +1,19 @@
+{
+  "accepted": true,
+  "gpu_prediction_batch": 64,
+  "max_length": 128,
+  "rows": 64,
+  "training_labels_read": false,
+  "confirmation_labels_read": false,
+  "training_micro_batch_unchanged": 16,
+  "checkpoint_sha256": "d62e59a1ac89572219573bdf96ac779d7bb0992153d705fe7664b0b6c49fe6c4",
+  "logit_max_abs_error": 1.9073486328125e-06,
+  "cls_relative_error": 8.066760415204044e-07,
+  "warm_cached_microbenchmark_seconds": {
+    "16": 0.4663301999971736,
+    "64": 0.6403239999999641
+  },
+  "peak_reserved_bytes": 922746880,
+  "cpu_deployment_batch_unchanged": 16,
+  "long_context_prediction_batch_unchanged": 16
+}

@@ -1,8 +1,9 @@
 {
-  "seconds": 27.9838293,
   "rows": 10000,
-  "sha256": "22ce9107fb2a0708f6e558adc553ebe87755c93f36d03febd8db8554490865cf",
-  "training_cache_required": false,
-  "old_encoder_rows_resumed": 10000,
-  "english_rows_resumed": 10000
+  "seconds": 104.6223675,
+  "sha256": "000952138fb52c63dd65b7bcd859a86401144e8dfb18dbdeeb69983a8891b891",
+  "title_rows_resumed": 10000,
+  "prefix_rows_resumed": 10000,
+  "top_threads": 4,
+  "training_cache_required": false
 }

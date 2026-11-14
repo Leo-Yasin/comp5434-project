@@ -1,0 +1,10 @@
+{
+  "source_revision": "06f020e0dbf909570eb886423bd3af256b855546",
+  "prefix_sha256": "31a2136baec5266dccff9477000e534f37413baaf2f423376419dd2d91dcae0e",
+  "top_sha256": "131dc0e7692190d2c3f15d8954fdf56bc9061a842649f3528ce3b9ec9d4dfdfe",
+  "frozen_encoder_layers": 11,
+  "trainable_encoder_layers": 1,
+  "teacher_permits_pretrained": true,
+  "prefix_output": "/deberta/encoder/layer.10/output/LayerNorm/LayerNormalization_output_0",
+  "initial_source_not_updated": true
+}

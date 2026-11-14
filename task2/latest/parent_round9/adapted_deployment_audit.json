@@ -1,0 +1,12 @@
+{
+  "rows": 32,
+  "max_length": 256,
+  "course_labels_used": false,
+  "logit_mae": 2.1793414362036856e-06,
+  "rating_mae": 5.890575020262023e-07,
+  "rating_max_error": 3.532219494228883e-06,
+  "argmax_agreement": 1.0,
+  "weights": "actual final adapted state",
+  "cls_relative_rmse": 2.809032366712927e-06,
+  "accepted": true
+}

@@ -1,0 +1,11 @@
+{
+  "rows": 83047,
+  "seconds": 1048.900990299997,
+  "rows_resumed": 0,
+  "max_length": 128,
+  "torch": "2.6.0+cu124",
+  "parameters_updated": false,
+  "input_sha256": "18dccfeda35a8a30daa1bb552e04bb68697406ddc0a696ec2d9a0c83edc6f1e5",
+  "logits_sha256": "36bf0c9a5a7d0ef88c3c432984a67677875c742deaf8514eb697d6d6145018d1",
+  "cls_sha256": "591f1637dfc4197ca296d2008259a5821bcaab3a5c632b800035d89a50490b74"
+}

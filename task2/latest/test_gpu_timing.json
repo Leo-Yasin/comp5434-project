@@ -1,0 +1,39 @@
+{
+  "rows": 10000,
+  "seconds": 105.06611700000212,
+  "rows_resumed": 0,
+  "backend": "torch_cuda_fp32",
+  "parameters_updated": false,
+  "provenance": {
+    "protocol": "verified_cuda_title_fp32_v1",
+    "completed": 10000,
+    "rows": 10000,
+    "labels_used": false,
+    "source_revision": "06f020e0dbf909570eb886423bd3af256b855546",
+    "input_sha256": "d0e8e21dbdeb80a819f39d4e7c6559d713933c18a8b2b23ab2cce248de26a571",
+    "reference_onnx_sha256": "99c2c4a7747c0271e3cd1d88e4dac711ac401e3434099e73180f4267a712fdd6",
+    "tokenizer_sha256": {
+      "added_tokens.json": "a4b6bfe668f2b3cf6f0cd535e98a0663d2d0d4a4a15f13075ad3597d33985a23",
+      "special_tokens_map.json": "ed7c099c988dbb414b18a6980d20cb57b91b7cd119f6f6941eb364b0e892e712",
+      "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+      "tokenizer_config.json": "b33e0217ae36ce45263c67366d8e8f06b6f043e15b15e88c543798d3fa582c4a"
+    },
+    "max_length": 128,
+    "dtype": "float32",
+    "backend": "torch_cuda_fp32",
+    "torch": "2.6.0+cu124",
+    "cpu_gpu_audit": {
+      "rows": 16,
+      "course_labels_used": false,
+      "logit_mae": 1.0933727025985718e-06,
+      "cls_relative_rmse": 8.875895218807273e-07,
+      "argmax_agreement": 1.0,
+      "accepted": true,
+      "source_revision": "06f020e0dbf909570eb886423bd3af256b855546",
+      "cpu_reference": "original FP32 ONNX/OpenVINO"
+    },
+    "npz_sha256": "fc2ce35eab42f1baa5d9f978e43abfe574d4e4a4fb91467833e9998dcf369d0d",
+    "logits_sha256": "4eb53e67dbf5f4f789f1f2790220048c559d73ab3531ef1490cb8b4415e0bac0",
+    "cls_sha256": "6e4097cac45618b0c0f082578f2edf9f1995bbcc49327bb7f5e36e2e39727754"
+  }
+}

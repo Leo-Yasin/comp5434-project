@@ -1,0 +1,14 @@
+{
+  "rows": 32,
+  "max_length": 256,
+  "labels_used": false,
+  "logit_max_error": 0.0,
+  "cls_max_error": 0.0,
+  "bit_identical": true,
+  "seconds": {
+    "1": 26.337283599998045,
+    "4": 12.520854900001723
+  },
+  "top_threads": 4,
+  "accepted": true
+}

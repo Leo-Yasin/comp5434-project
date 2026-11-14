@@ -1,0 +1,31 @@
+{
+  "torch": "2.6.0+cu124",
+  "device": "NVIDIA GeForce MX450",
+  "capability": [
+    7,
+    5
+  ],
+  "course_labels_used": false,
+  "training": [
+    {
+      "batch": 8,
+      "rows_per_second": 21.493279633558124,
+      "peak_reserved_bytes": 562036736,
+      "last_layer_weight_updated": true
+    },
+    {
+      "batch": 16,
+      "rows_per_second": 27.38986876146038,
+      "peak_reserved_bytes": 931135488,
+      "last_layer_weight_updated": true
+    }
+  ],
+  "prefix_seconds": 6.151726900003268,
+  "prefix_rows": 32,
+  "max_length": 256,
+  "prefix_batch": 4,
+  "gpu_prefix_vs_fp16_cache_relative_rmse": 0.00020752762782592349,
+  "gpu_cached_complete_logit_mae": 5.0800990720745176e-05,
+  "gpu_cached_complete_argmax_agreement": 1.0,
+  "accepted": true
+}

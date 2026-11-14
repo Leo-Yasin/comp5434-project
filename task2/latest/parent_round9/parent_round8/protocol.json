@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-14",
+  "round": 8,
+  "previous_measured_best": 0.53719,
+  "new_kaggle_score": null,
+  "inner_fit": 33437,
+  "inner_check": 8268,
+  "confirmation": 41342,
+  "final_head_fit": 83047,
+  "word_fit_rows": 7531189,
+  "outer_validation_rows": 153456,
+  "historical_validation_reuse": true,
+  "gpu_used": false,
+  "frozen_encoders": true,
+  "english_precision": "f32",
+  "english_used": true,
+  "selection_candidates": 24
+}

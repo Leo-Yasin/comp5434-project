@@ -1,0 +1,9 @@
+{
+  "internal_check_only": true,
+  "frozen_selection": false,
+  "mse": {
+    "baseline": 0.30475024238871706,
+    "neural_only": 0.3896729106686901,
+    "fixed_half_blend": 0.3174211306965519
+  }
+}

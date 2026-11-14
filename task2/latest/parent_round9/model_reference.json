@@ -1,0 +1,8 @@
+{
+  "path": "C:\\Users\\Leo\\.cache\\comp5434-local9\\model",
+  "logical_bytes": 1988720544,
+  "parameters_in_git": false,
+  "reason": "F盘空间有限，完整模型存C盘本轮目录。",
+  "cpu_top_threads": 4,
+  "cpu_thread_audit_sha256": "e2f6e08094043847577213bf853d3cc2e03c9ece0c7841625cf6ac98d94e0097"
+}

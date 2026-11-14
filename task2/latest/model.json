@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "round": 10,
+  "choice": {
+    "route": "noise_head",
+    "ridge": 1000.0,
+    "alpha": 1.0,
+    "metrics": {
+      "observed_rmse": 1.2194379454603832,
+      "noise_model_risk": {
+        "latent_mse_estimate": 0.2934910095639301,
+        "latent_rmse_estimate": 0.5417481052702724
+      },
+      "non_explicit_title_risk": {
+        "latent_mse_estimate": 0.3188679475558741,
+        "latent_rmse_estimate": 0.5646839359817792
+      },
+      "rows": 8268,
+      "nonstar_rows": 7447,
+      "explicit_title_proxy_not_used_for_selection": true
+    },
+    "internal_improved": true
+  },
+  "parent_round": 9,
+  "title_encoder_updated": false,
+  "title_source_revision": "06f020e0dbf909570eb886423bd3af256b855546",
+  "title_max_length": 128,
+  "previous_measured_best": 0.50646,
+  "new_kaggle_score": null,
+  "historical_validation_reuse": true,
+  "external_corpus_overlap": "unknown"
+}

@@ -1,0 +1,8 @@
+{
+  "rows": 10000,
+  "single_vs_four_max_rating_error": 2.958000000496952e-07,
+  "bit_identical": false,
+  "original_tolerance": 1e-08,
+  "original_passed": false,
+  "resolution": "canonical four-thread inference on both independent paths"
+}

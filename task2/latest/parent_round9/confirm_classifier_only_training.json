@@ -1,0 +1,27 @@
+{
+  "stage": "confirm",
+  "training_rows": 41705,
+  "epochs_completed": 1,
+  "planned_epochs": 2,
+  "learning_rate": 3e-05,
+  "classifier_lr_multiplier": 5,
+  "objective": "residual_noise",
+  "effective_batch": 64,
+  "micro_batch": 16,
+  "encoder_block_updated": false,
+  "encoder_parameter_max_change": 0,
+  "frozen_encoder_eval": true,
+  "frozen_cls_source": "C:\\Users\\Leo\\.cache\\comp5434-local9\\cls\\neural_unadapted_long.npy",
+  "history": [
+    {
+      "epoch": 1,
+      "seconds": 10.589320600003703,
+      "training_loss": 0.9786902205510573
+    }
+  ],
+  "seconds": 11.718957400000363,
+  "frozen_training_cls_source": "F:\\POLYU COURSES\\Semester1\\COMP5434\\project\\task2\\outputs\\round8_20261114\\english_development.embedding.npy",
+  "training_max_length": 128,
+  "inference_max_length": 256,
+  "trainable_parameters": 594437
+}

@@ -1,0 +1,128 @@
+{
+  "inner_lr1e-05": {
+    "stage": "inner",
+    "training_rows": 33437,
+    "learning_rate": 1e-05,
+    "classifier_lr_multiplier": 5,
+    "planned_epochs": 2,
+    "epochs_completed": 2,
+    "effective_batch": 64,
+    "micro_batch": 16,
+    "epsilon": 0.25165131324376977,
+    "seed": 5434,
+    "history": [
+      {
+        "epoch": 1,
+        "seconds": 702.1990380000025,
+        "training_loss": 1.0413214191865694,
+        "steps": 523
+      },
+      {
+        "epoch": 2,
+        "seconds": 665.442192999999,
+        "training_loss": 1.0324956049331637,
+        "steps": 1046
+      }
+    ],
+    "trainable_parameters": 7682309,
+    "encoder_block_updated": true,
+    "encoder_parameter_max_change": 0.0016033798456192017,
+    "seconds": 1564.3994516999992
+  },
+  "inner_lr3e-05": {
+    "stage": "inner",
+    "training_rows": 33437,
+    "learning_rate": 3e-05,
+    "classifier_lr_multiplier": 5,
+    "planned_epochs": 2,
+    "epochs_completed": 2,
+    "effective_batch": 64,
+    "micro_batch": 16,
+    "epsilon": 0.25165131324376977,
+    "seed": 5434,
+    "history": [
+      {
+        "epoch": 1,
+        "seconds": 659.6318313000011,
+        "training_loss": 1.0390592027651637,
+        "steps": 523
+      },
+      {
+        "epoch": 2,
+        "seconds": 679.9905064999984,
+        "training_loss": 1.0316096707679439,
+        "steps": 1046
+      }
+    ],
+    "objective": "forward_noise",
+    "teacher_training_predictions_cross_fitted": null,
+    "trainable_parameters": 7682309,
+    "encoder_block_updated": true,
+    "encoder_parameter_max_change": 0.003448318690061569,
+    "seconds": 1509.5845546000019
+  },
+  "inner_lr1e-05_posterior": {
+    "stage": "inner",
+    "training_rows": 33437,
+    "learning_rate": 1e-05,
+    "classifier_lr_multiplier": 5,
+    "planned_epochs": 2,
+    "epochs_completed": 2,
+    "effective_batch": 64,
+    "micro_batch": 16,
+    "epsilon": 0.25165131324376977,
+    "seed": 5434,
+    "history": [
+      {
+        "epoch": 1,
+        "seconds": 685.4555839000022,
+        "training_loss": 0.5851044715235107,
+        "steps": 523
+      },
+      {
+        "epoch": 2,
+        "seconds": 703.9706577999968,
+        "training_loss": 0.5683648775282659,
+        "steps": 1046
+      }
+    ],
+    "objective": "teacher_posterior",
+    "teacher_training_predictions_cross_fitted": false,
+    "trainable_parameters": 7682309,
+    "encoder_block_updated": true,
+    "encoder_parameter_max_change": 0.0018626637756824493,
+    "seconds": 1579.9642625000051
+  },
+  "inner_lr3e-05_residual": {
+    "stage": "inner",
+    "training_rows": 33437,
+    "learning_rate": 3e-05,
+    "classifier_lr_multiplier": 5,
+    "planned_epochs": 2,
+    "epochs_completed": 2,
+    "effective_batch": 64,
+    "micro_batch": 16,
+    "epsilon": 0.25165131324376977,
+    "seed": 5434,
+    "history": [
+      {
+        "epoch": 1,
+        "seconds": 741.2040086999987,
+        "training_loss": 0.9762381093496341,
+        "steps": 523
+      },
+      {
+        "epoch": 2,
+        "seconds": 700.8003987000047,
+        "training_loss": 0.9721461458211881,
+        "steps": 1046
+      }
+    ],
+    "objective": "residual_noise",
+    "teacher_training_predictions_cross_fitted": null,
+    "trainable_parameters": 7682309,
+    "encoder_block_updated": true,
+    "encoder_parameter_max_change": 0.003154553472995758,
+    "seconds": 1694.8155707999977
+  }
+}

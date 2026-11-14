@@ -1,0 +1,23 @@
+{
+  "iterations": 23,
+  "success": true,
+  "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+  "objective": 80709.4351403059,
+  "ridge": 1000.0,
+  "epsilon": 0.25165131324376977,
+  "training_rows": 83047,
+  "history": [
+    {
+      "loss": 80778.26510862826,
+      "gradient_norm": 871.3703713835478
+    },
+    {
+      "loss": 80709.52146476178,
+      "gradient_norm": 23.760151889536477
+    },
+    {
+      "loss": 80709.43560228024,
+      "gradient_norm": 4.698901956093698
+    }
+  ]
+}

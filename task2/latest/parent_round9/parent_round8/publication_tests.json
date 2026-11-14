@@ -1,0 +1,9 @@
+{
+  "tests": 41,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "python": "3.9.13",
+  "numpy": "1.21.5",
+  "source": "publication task2 package"
+}

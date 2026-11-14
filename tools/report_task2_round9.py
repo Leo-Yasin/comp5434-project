@@ -1,0 +1,94 @@
+"""只根据实际已核验产物生成第九轮结果，不预填预期Kaggle分数。"""
+import json
+import task2
+from task2.audit import ROOT
+from task2.partial9_protocol import OUT,FOLDER,tag,run_name
+
+
+def read(path):return json.loads(path.read_text(encoding="utf-8"))
+
+
+def main():
+    choice=read(OUT/"frozen_selection.json");scores=read(OUT/"confirmation.json")
+    proof=read(ROOT/"submissions/20261114_task2_round9/manifest.json");ci=read(OUT/"uncertainty.json")
+    selection=read(OUT/"inner_comparison.json");train=read(FOLDER/run_name("final",choice)/"training.json")
+    cache=read(FOLDER/"development/timing.json");model=read(OUT/"model_reference.json")
+    batch=read(OUT/"gpu_prediction_batch_audit.json")
+    cpu_threads=read(OUT/"cpu_threads_audit.json")
+    full_thread=read(OUT/"cpu_threads_full_test_audit.json")
+    interval_note="条件区间跨零，不能据此宣称统计显著提升；新候选仍需Kaggle实际测评。" if ci["conditional_95_interval"][0]<=0<=ci["conditional_95_interval"][1] else "该条件区间不等于线上改进保证。"
+    attribution="消融仅解释固定配置，不据确认结果重新选型。"
+    if scores["without_adaptation"]["noise_model_risk"]["latent_mse_estimate"]<scores["candidate"]["noise_model_risk"]["latent_mse_estimate"]:
+        attribution+=" 本次不更新编码层的控制更好，结果未证明编码层微调本身带来额外收益；长上下文在本次控制中有独立收益。第九轮仍按确认前冻结的配置交付，不事后改选控制。"
+    names={"baseline":"第八轮已测版本（线上0.50646）","candidate":"第九轮冻结候选",
+        "without_adaptation":"相同推理长度/融合、不做权重适配","classifier_only":"仅训练原pooler/classifier"}
+    lines=[]
+    for key,name in names.items():
+        if key in scores:
+            m=scores[key];lines.append(f"| {name} | {m['noise_model_risk']['latent_rmse_estimate']:.6f} | {m['non_explicit_title_risk']['latent_rmse_estimate']:.6f} | {m['observed_rmse']:.6f} |")
+    text=f"""# Task2第九轮实际结果（2026-11-14）
+
+推荐：submissions/20261114_task2_round9/task2_round9.csv。Git快照中对应submissions/latest/task2.csv，SHA相同。
+第八轮已获Kaggle RMSE=0.50646；第九轮线上分数未知。以下本地风险依赖均匀标签替换假设，不替代线上成绩。
+
+## 这轮改变了什么
+
+从冻结CLS融合推进到实际微调英语DeBERTa最后一个Transformer编码层及原pooler/classifier，前11层固定。
+微调使用本机MX450和独立torch2.6.0+cu124，没有使用云端GPU；预测可在CPU执行。
+原始词模型/Dask基础参数继续继承，没有声称对全部768万条做神经微调。
+
+最终编码层学习率={choice['learning_rate']}，分类头为其5倍，轮次={choice['epochs']}，融合方式={choice['route']}，
+训练目标={choice['objective']}（forward_noise为原噪声似然；teacher_posterior为固定教师去噪软目标；residual_noise保留第八轮类别偏置并学习语义修正）。
+直接融合系数={choice.get('alpha','不适用')}，噪声校准L2={choice.get('ridge','不适用')}。
+训练正文上限128token，推理上限={choice['max_length']}token；推理256不等于以256做了神经训练。
+微批16、累积64、权重衰减0.01、固定种子5434、确定性CUDA更新；损失采用上述被冻结的训练目标。
+最终训练{train['training_rows']}条，实际可训练参数{train['trainable_parameters']}，编码层参数最大变化{train['encoder_parameter_max_change']:.8f}。
+
+## 内部与冻结确认
+
+内部33437条训练、8268条检查，从{selection['candidate_count']}个可用候选中冻结；之后才使用41342条确认评分。
+上下文对照在内部基线长度诊断后、首个新神经评分之前加入；后验目标在首次新验证指标前加入。
+更新CLS和残差目标在首个固定半融合诊断未胜出后加入，不能把全部候选称为首次就已登记。高维表示在拟合行上并非OOF。
+这些分组有历史复用，条件bootstrap不校正模型选择偏差、噪声假设误差、外部语料重叠或分布变化。
+
+| 确认模型 | 噪声风险RMSE估计 | 非显式星级标题子组 | 原观测RMSE |
+|---|---:|---:|---:|
+{chr(10).join(lines)}
+
+新减旧的风险RMSE差={ci['difference']:.6f}；500次评论组级配对bootstrap条件95%区间={ci['conditional_95_interval']}。
+{interval_note}
+消融只解释被冻结的配置，不根据确认消融结果重新选型，也不把全部收益都归因于编码层单一改动。
+{attribution}
+
+## 数值与运行边界
+
+128token的CPU FP32拆分最大logit误差7.15e-6；float16隐向量缓存平均误差6.24e-5、类别一致率100%。
+GPU前缀缓存接回原最后层的平均logit误差6.21e-5、类别一致率100%；这些是数值实现一致性，不是课程分类准确率。
+256token有单独的动态相对位置、CPU/GPU和缓存审计；仅通过的实现进入候选。
+缓存只保存有效token，约{cache['bytes']/1024**3:.2f}GiB；本次前缀推理/写缓存阶段{cache['seconds']:.2f}秒，分词18.59秒及初始化另计。
+后续GPU的128token无梯度前向批量为{batch['gpu_prediction_batch'] if batch['accepted'] else 16}；64个内部拟合输入的16/64批量最大logit差{batch['logit_max_abs_error']:.3g}、CLS相对差{batch['cls_relative_error']:.3g}。
+批量对照通过独立适配快照数值核对，是否采用64由实际计时判断；不改变训练微批16、有效批64、256token推理批16或CPU部署批16，微型缓存计时不作为端到端速度。
+CPU最后层单/四线程的32条256token输入logits与CLS逐位一致={cpu_threads['bit_identical']}，该次耗时{cpu_threads['seconds']}；后续采用{cpu_threads['top_threads']}线程，首次已启动预测使用单线程，完整测试集评分再经独立路径核验。
+全量10000行单/四线程最大评分差{full_thread['single_vs_four_max_rating_error']:.3g}，首次未达到1e-8门槛；保留首次产物/失败记录后，正式与独立路径统一四线程重算。最终manifest的独立一致性对应统一执行配置，不把32行局部结论泛化为全部动态形状逐位一致。
+前缀缓存可复用但最终评分始终重算；独立预测计时会注明复用行数，不能作为全新端到端推理速度。
+
+## 交付证据
+
+10000行id/rating、样例ID顺序、ID唯一、有限1–5连续评分均通过。
+提交SHA-256：{proof['sha256']}。
+原始CSV独立特征路径最大评分差={proof['max_abs_difference']}，逐字节一致={proof['independent_byte_identical']}。
+独立路径重现第八轮基线，{proof['old_files_unchanged']}个旧提交CSV指纹不变。
+41项原数值回归、7项新噪声/后验/残差梯度、冻结边界及缓存分类头等价测试、确定性CUDA训练检查和独立预测通过。
+
+完整自包含模型：{model['path']}，逻辑文件大小{model['logical_bytes']/1024**3:.2f}GiB；放C盘以保留F盘旧模型。
+Git只含代码、中文记录、小型证据和当前CSV，不含大型参数、训练缓存或原始身份元数据。
+队友另取完整模型后按task2/docs/第九轮最后层适配与复现.md执行CPU预测。
+
+源权重仍为MIT固定版本06f020e0dbf909570eb886423bd3af256b855546；原模型卡训练语料不完整，重叠未知。
+原理及每阶段包含失败尝试的记录见对应第九轮文档，不把老师许可直接等同于已理解模型。
+"""
+    (ROOT/"docs/Task2第九轮优化结果-20261114.md").write_text(text,encoding="utf-8")
+    print("第九轮实际结果报告完成",flush=True)
+
+
+if __name__=="__main__":main()

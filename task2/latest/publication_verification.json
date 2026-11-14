@@ -1,6 +1,14 @@
 {
-  "byte_identical": true,
-  "sha256": "22ce9107fb2a0708f6e558adc553ebe87755c93f36d03febd8db8554490865cf",
-  "source": "Git publication package",
-  "frozen_embeddings_reused": true
+  "rows": 10000,
+  "sha256": "000952138fb52c63dd65b7bcd859a86401144e8dfb18dbdeeb69983a8891b891",
+  "independent_byte_identical": true,
+  "max_abs_difference": 0.0,
+  "publication_source": "F:\\POLYU COURSES\\Semester1\\COMP5434\\project\\tmp\\github-publish-20261108",
+  "top_threads": 4,
+  "task1_unchanged": true,
+  "model_integrity_sha256": "e55ed0d260ddb582982e54b8fdcbcec31954cc6d0036f3275adaff8abc2ed9f1",
+  "title_rows_resumed": 10000,
+  "prefix_rows_resumed": 10000,
+  "new_kaggle_score": null,
+  "previous_measured_best": 0.50646
 }

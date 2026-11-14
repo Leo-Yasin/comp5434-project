@@ -1,0 +1,5 @@
+# 当前证据：第八轮
+
+protocol、selection_protocol、frozen_selection、inner_comparison、confirmation、paired_uncertainty、reproduced.timing和verification_manifest均为本轮。线上新分数未知，第七轮已测0.53719。
+英语数值审计包含拒用INT8及正式FP32运行时核验。parent_round7是旧阶段证据，不能当成本轮指标。
+Git不含完整Task2模型；取得自包含模型包后按task2/README开头预测。

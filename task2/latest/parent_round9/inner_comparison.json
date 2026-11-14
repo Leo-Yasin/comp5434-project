@@ -1,0 +1,2836 @@
+{
+  "baseline": {
+    "observed_rmse": 1.2146446573372331,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.3047502423887176,
+      "latent_rmse_estimate": 0.5520418846326043
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.3312985073553885,
+      "latent_rmse_estimate": 0.5755853606159459
+    },
+    "rows": 8268,
+    "nonstar_rows": 7447,
+    "explicit_title_proxy_not_used_for_selection": true
+  },
+  "candidates": [
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.2122495799245807,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3036380747438783,
+          "latent_rmse_estimate": 0.5510336421162307
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32885559359559535,
+          "latent_rmse_estimate": 0.5734593216572518
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2159899947950927,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.31742113008404826,
+          "latent_rmse_estimate": 0.5634013933991008
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3391383960170169,
+          "latent_rmse_estimate": 0.5823559015044124
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2258097380267565,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.34609940840922687,
+          "latent_rmse_estimate": 0.5883021404085037
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3621469146196526,
+          "latent_rmse_estimate": 0.6017864360548953
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.241564570703308,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.38967290971941415,
+          "latent_rmse_estimate": 0.6242378630933998
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3978811494035032,
+          "latent_rmse_estimate": 0.6307782093600754
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.216644901454501,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.306319360331135,
+          "latent_rmse_estimate": 0.5534612545889143
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.332948956844705,
+          "latent_rmse_estimate": 0.5770172933671096
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2150453592853279,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30503950957436987,
+          "latent_rmse_estimate": 0.552303819988935
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3315921101532427,
+          "latent_rmse_estimate": 0.5758403512721584
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2152011440292831,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30545391600219385,
+          "latent_rmse_estimate": 0.5526788543107053
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33198825990738584,
+          "latent_rmse_estimate": 0.5761842239313619
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.2149296880327707,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3048164396102229,
+          "latent_rmse_estimate": 0.5521018380790114
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33134315672828685,
+          "latent_rmse_estimate": 0.5756241453659556
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.211204289028663,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3000789298624726,
+          "latent_rmse_estimate": 0.5477946055434213
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32490406816529366,
+          "latent_rmse_estimate": 0.5700035685548763
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.214005707678198,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.310547459686497,
+          "latent_rmse_estimate": 0.5572678527301723
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33150693276376714,
+          "latent_rmse_estimate": 0.5757663873167372
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2230060217101653,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.33615583186079107,
+          "latent_rmse_estimate": 0.5797894720161716
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.35110710115081045,
+          "latent_rmse_estimate": 0.5925429108096817
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2380700474341815,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3769040463853531,
+          "latent_rmse_estimate": 0.6139251146396872
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.38370457332642294,
+          "latent_rmse_estimate": 0.6194389181561188
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.2164720344389606,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30405632464906585,
+          "latent_rmse_estimate": 0.5514130254619181
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33046844008766085,
+          "latent_rmse_estimate": 0.5748638448255907
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.215058289323462,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3037860069135273,
+          "latent_rmse_estimate": 0.5511678572935176
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33019783887294113,
+          "latent_rmse_estimate": 0.5746284354893526
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.214999398842905,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3032421195313023,
+          "latent_rmse_estimate": 0.5506742408459854
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32949316305750126,
+          "latent_rmse_estimate": 0.5740149502038263
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.2152092078610957,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3034753755605592,
+          "latent_rmse_estimate": 0.5508859914361222
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3298290592964468,
+          "latent_rmse_estimate": 0.5743074605961922
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.212778697265493,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30412961966794344,
+          "latent_rmse_estimate": 0.5514794825448572
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32937810231186543,
+          "latent_rmse_estimate": 0.573914716932634
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2169275965788098,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3181190787781602,
+          "latent_rmse_estimate": 0.5640204595386237
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3398017600469611,
+          "latent_rmse_estimate": 0.5829251753415365
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2270303435205507,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3467186197193672,
+          "latent_rmse_estimate": 0.5888281750386671
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.36256948056067617,
+          "latent_rmse_estimate": 0.6021374266400289
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2429417662771791,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3899282424915647,
+          "latent_rmse_estimate": 0.6244423452101601
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.39768126385301,
+          "latent_rmse_estimate": 0.6306197458476939
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.2166519174737085,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3063081041005218,
+          "latent_rmse_estimate": 0.5534510855536574
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33292582957573247,
+          "latent_rmse_estimate": 0.5769972526587388
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2150673097320486,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30502996884441985,
+          "latent_rmse_estimate": 0.5522951827097715
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3315752270472345,
+          "latent_rmse_estimate": 0.575825691548436
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2152035006709057,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30544213961978023,
+          "latent_rmse_estimate": 0.552668200297231
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33196159432233496,
+          "latent_rmse_estimate": 0.5761610836583246
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.2149536072006053,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30481043991584866,
+          "latent_rmse_estimate": 0.5520964045489236
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33133224533366773,
+          "latent_rmse_estimate": 0.5756146674066495
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.211691548833285,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3004523245797971,
+          "latent_rmse_estimate": 0.5481353159392278
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3252954011182583,
+          "latent_rmse_estimate": 0.5703467376239284
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2148660886452554,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3110228446809729,
+          "latent_rmse_estimate": 0.5576942214878803
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33192319639508217,
+          "latent_rmse_estimate": 0.5761277604794636
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2241206047920825,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.33646180269224507,
+          "latent_rmse_estimate": 0.5800532757361561
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3511818931858605,
+          "latent_rmse_estimate": 0.5926060185197755
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2393188995262447,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.37676919861361235,
+          "latent_rmse_estimate": 0.6138152805312135
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.38307149149059416,
+          "latent_rmse_estimate": 0.6189276948809078
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.2165024311648955,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30406430684557667,
+          "latent_rmse_estimate": 0.551420263361419
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3304581512772448,
+          "latent_rmse_estimate": 0.5748548958452426
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2150897805443572,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3037999262607678,
+          "latent_rmse_estimate": 0.551180484288738
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33019674611570216,
+          "latent_rmse_estimate": 0.5746274846504491
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2149983424631077,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30321377706088276,
+          "latent_rmse_estimate": 0.5506485059099705
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3294454329917044,
+          "latent_rmse_estimate": 0.5739733730685636
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.2152218021758576,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30345873918787863,
+          "latent_rmse_estimate": 0.5508708915779438
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32980427752762415,
+          "latent_rmse_estimate": 0.5742858848410121
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.2127628017591714,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3038775448528647,
+          "latent_rmse_estimate": 0.5512508910222864
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32913147498316075,
+          "latent_rmse_estimate": 0.5736998126051296
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2169042111493866,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3176351233664974,
+          "latent_rmse_estimate": 0.5635912733235828
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3393924076050715,
+          "latent_rmse_estimate": 0.5825739503316909
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2270078976701622,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3460229779296138,
+          "latent_rmse_estimate": 0.5882371782959777
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.36208130522112136,
+          "latent_rmse_estimate": 0.6017319213911801
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2429284689097262,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.38904110854221574,
+          "latent_rmse_estimate": 0.6237315997624425
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.39719816783131157,
+          "latent_rmse_estimate": 0.6302365967089752
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.216675048701873,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30619648804202926,
+          "latent_rmse_estimate": 0.5533502399403376
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33282678844839214,
+          "latent_rmse_estimate": 0.5769114216657459
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2150902333436755,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30496372551634565,
+          "latent_rmse_estimate": 0.5522352085084268
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3315119888004629,
+          "latent_rmse_estimate": 0.575770778001509
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2152692847559972,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3053080138739289,
+          "latent_rmse_estimate": 0.552546843149003
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33179068928230265,
+          "latent_rmse_estimate": 0.5760127509719751
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.215043493743288,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3047572855477539,
+          "latent_rmse_estimate": 0.5520482637847473
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33126873276054997,
+          "latent_rmse_estimate": 0.5755594954134194
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.2117221081679772,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30031987366027657,
+          "latent_rmse_estimate": 0.5480144830752893
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3251815857095845,
+          "latent_rmse_estimate": 0.5702469515127498
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2149298942968494,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.31076486173978,
+          "latent_rmse_estimate": 0.5574628792482779
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3317647289251064,
+          "latent_rmse_estimate": 0.5759902159977254
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2242198272766227,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3360852066272271,
+          "latent_rmse_estimate": 0.5797285628871731
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3510479370019548,
+          "latent_rmse_estimate": 0.5924929847702459
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2394551543909114,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3762809083226184,
+          "latent_rmse_estimate": 0.6134174013855642
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3830312099401298,
+          "latent_rmse_estimate": 0.6188951526229057
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.2165165207045996,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30396717477465424,
+          "latent_rmse_estimate": 0.5513321818782704
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33037861698180065,
+          "latent_rmse_estimate": 0.5747857139680845
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2150953594438227,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3037283967007559,
+          "latent_rmse_estimate": 0.5511155928666471
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3301331609471247,
+          "latent_rmse_estimate": 0.5745721546917538
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2150361898179314,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30303599604591386,
+          "latent_rmse_estimate": 0.550487053477113
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32922343445895513,
+          "latent_rmse_estimate": 0.5737799529950094
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.2153074460826128,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30340325925727857,
+          "latent_rmse_estimate": 0.5508205327121335
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3297384957178001,
+          "latent_rmse_estimate": 0.5742286092818784
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.2122459297396437,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30383656198024495,
+          "latent_rmse_estimate": 0.5512137171553743
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32907847452279704,
+          "latent_rmse_estimate": 0.5736536189398591
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2157863204838015,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3173405139045321,
+          "latent_rmse_estimate": 0.5633298446776384
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3390334016090917,
+          "latent_rmse_estimate": 0.5822657482705742
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2252143454569522,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3452620981615779,
+          "latent_rmse_estimate": 0.5875900766364064
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.36116328861427294,
+          "latent_rmse_estimate": 0.6009686253160583
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2403957593785275,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3876013147513829,
+          "latent_rmse_estimate": 0.6225763525475272
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.39546813553834,
+          "latent_rmse_estimate": 0.6288625728554212
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.2167138818757754,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30607426020376755,
+          "latent_rmse_estimate": 0.5532397854491012
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3327048654856679,
+          "latent_rmse_estimate": 0.5768057432842255
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2151401693453545,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30489511142108683,
+          "latent_rmse_estimate": 0.5521730810362697
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3314415225748515,
+          "latent_rmse_estimate": 0.5757095817987151
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.215292326433109,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30526456915815037,
+          "latent_rmse_estimate": 0.5525075285986158
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3317357731385979,
+          "latent_rmse_estimate": 0.5759650797909522
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.215097857407535,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3047352607269674,
+          "latent_rmse_estimate": 0.5520283151496556
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33124458502938414,
+          "latent_rmse_estimate": 0.5755385174159798
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.2112044530308665,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30028089746506037,
+          "latent_rmse_estimate": 0.547978920639344
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32513081315425363,
+          "latent_rmse_estimate": 0.5702024317330238
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2137958533292528,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3104411156149752,
+          "latent_rmse_estimate": 0.5571724289795532
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33137337407343276,
+          "latent_rmse_estimate": 0.5756503922290271
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.222380498515233,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.33523089683846247,
+          "latent_rmse_estimate": 0.578991275269725
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.35002619011292757,
+          "latent_rmse_estimate": 0.5916301125812712
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2368336006977583,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3746502411355221,
+          "latent_rmse_estimate": 0.6120867921590223
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3810892612727375,
+          "latent_rmse_estimate": 0.6173242756224134
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.2165875094416612,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30392621681229914,
+          "latent_rmse_estimate": 0.5512950360853063
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3303543425400607,
+          "latent_rmse_estimate": 0.5747645975006296
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2151572675183082,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3036566744325017,
+          "latent_rmse_estimate": 0.5510505189476748
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3300655926057389,
+          "latent_rmse_estimate": 0.5745133528524284
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2150530765024248,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30298230226250406,
+          "latent_rmse_estimate": 0.5504382819740139
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32916161896907864,
+          "latent_rmse_estimate": 0.5737260835704427
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "forward_noise",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.215355318124055,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30337406286969176,
+          "latent_rmse_estimate": 0.5507940294426691
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3297083234466446,
+          "latent_rmse_estimate": 0.5742023366781475
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.2111056167243008,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30512426879108184,
+          "latent_rmse_estimate": 0.5523805470788068
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3305384320380166,
+          "latent_rmse_estimate": 0.574924718583239
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2134501972839102,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.31976769035739433,
+          "latent_rmse_estimate": 0.5654800530145996
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.34186692605048863,
+          "latent_rmse_estimate": 0.5846938737925075
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2216445239428366,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3486805070876527,
+          "latent_rmse_estimate": 0.590491750228276
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.36528398939280293,
+          "latent_rmse_estimate": 0.6043872842745808
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2355722154672408,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3918627189818592,
+          "latent_rmse_estimate": 0.6259893920681557
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.400789622064961,
+          "latent_rmse_estimate": 0.6330794753148778
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.2166316706369622,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3064614545114827,
+          "latent_rmse_estimate": 0.5535896083846613
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33309188149519425,
+          "latent_rmse_estimate": 0.5771411278839814
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2150775296873029,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30508245408450585,
+          "latent_rmse_estimate": 0.5523426962353226
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3316344460169784,
+          "latent_rmse_estimate": 0.5758771101693297
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2152744786318925,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30546772260130517,
+          "latent_rmse_estimate": 0.5526913447859529
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3319758309021758,
+          "latent_rmse_estimate": 0.5761734382129879
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.2149879776724974,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3048342527543032,
+          "latent_rmse_estimate": 0.5521179699614053
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33135462505510893,
+          "latent_rmse_estimate": 0.5756341069247972
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.2099477955631472,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3012128901382785,
+          "latent_rmse_estimate": 0.5488286528036583
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3261958405647554,
+          "latent_rmse_estimate": 0.5711355710903984
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2112617854109158,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.31224495830632465,
+          "latent_rmse_estimate": 0.5587888315869642
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33351484486366906,
+          "latent_rmse_estimate": 0.577507441392463
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2185671824007251,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3378464468928537,
+          "latent_rmse_estimate": 0.5812455994610658
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3532555202521288,
+          "latent_rmse_estimate": 0.5943530266198102
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2317573883154627,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3780173558978671,
+          "latent_rmse_estimate": 0.614831160480556
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.38541786673013534,
+          "latent_rmse_estimate": 0.6208203175880566
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.2164255130309014,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3041215153504192,
+          "latent_rmse_estimate": 0.5514721346998588
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3305107450880606,
+          "latent_rmse_estimate": 0.5749006393178395
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.21507615431018,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30385700075668054,
+          "latent_rmse_estimate": 0.5512322566366019
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.330255477793297,
+          "latent_rmse_estimate": 0.5746785865101439
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2150274712327873,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3032253850584889,
+          "latent_rmse_estimate": 0.550659046106108
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3294427109508252,
+          "latent_rmse_estimate": 0.5739710018379197
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.215256431611519,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3034994244815802,
+          "latent_rmse_estimate": 0.5509078184974144
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3298444768852902,
+          "latent_rmse_estimate": 0.5743208832049295
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.2110080387260391,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3049719267208238,
+          "latent_rmse_estimate": 0.5522426339217426
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3303939479369964,
+          "latent_rmse_estimate": 0.5747990500487944
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.213194985503615,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3193163877837566,
+          "latent_rmse_estimate": 0.56508086835758
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.34142021661180527,
+          "latent_rmse_estimate": 0.5843117460840619
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.221174210575203,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.34778362557751413,
+          "latent_rmse_estimate": 0.5897318251353866
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.36437731337981544,
+          "latent_rmse_estimate": 0.6036367395874902
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2348334337179443,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.39037364010209624,
+          "latent_rmse_estimate": 0.6247988797221841
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3992652382410275,
+          "latent_rmse_estimate": 0.6318743848590695
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.216648531833505,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30640478955883044,
+          "latent_rmse_estimate": 0.5535384264518863
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3330343136020198,
+          "latent_rmse_estimate": 0.5770912524046954
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.215104114251852,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30505904799654826,
+          "latent_rmse_estimate": 0.5523215078163698
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.331610733295602,
+          "latent_rmse_estimate": 0.5758565214492252
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2152859830288096,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30543852697842877,
+          "latent_rmse_estimate": 0.5526649319238817
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3319408950212992,
+          "latent_rmse_estimate": 0.5761431202585857
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "teacher_posterior",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.2150100308676992,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3048213341575722,
+          "latent_rmse_estimate": 0.5521062707102431
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3313398422993923,
+          "latent_rmse_estimate": 0.5756212663717284
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.2098690830273542,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3011217408885077,
+          "latent_rmse_estimate": 0.5487456067145392
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3261192955317869,
+          "latent_rmse_estimate": 0.5710685558948128
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2110345200405392,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3118930955850995,
+          "latent_rmse_estimate": 0.5584738987500665
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3331785380971687,
+          "latent_rmse_estimate": 0.5772161970156144
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2181239163529254,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.337064306478493,
+          "latent_rmse_estimate": 0.5805723955532962
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.35247623505153486,
+          "latent_rmse_estimate": 0.5936970903175582
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2310349299061174,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.376635373568688,
+          "latent_rmse_estimate": 0.6137062600044813
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.38401238639488555,
+          "latent_rmse_estimate": 0.6196873295419921
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.2164635723887753,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3041436422135491,
+          "latent_rmse_estimate": 0.5514921959679476
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33054471736456265,
+          "latent_rmse_estimate": 0.5749301847742582
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2151169058115767,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3038463865090703,
+          "latent_rmse_estimate": 0.5512226288071548
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3302498956225123,
+          "latent_rmse_estimate": 0.574673729713228
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2150404534755372,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30319660070120386,
+          "latent_rmse_estimate": 0.5506329092064911
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3294068034136288,
+          "latent_rmse_estimate": 0.5739397210627862
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "teacher_posterior",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.2152771753675804,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3034911883354652,
+          "latent_rmse_estimate": 0.5509003433793314
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.329834628843315,
+          "latent_rmse_estimate": 0.5743123095000794
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.2169640520936664,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30310226800540313,
+          "latent_rmse_estimate": 0.5505472441175263
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3296263644802855,
+          "latent_rmse_estimate": 0.5741309645719219
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.219648918195079,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3023564126979277,
+          "latent_rmse_estimate": 0.549869450595255
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32885893510394354,
+          "latent_rmse_estimate": 0.5734622351157429
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2226968480766,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30251267646628865,
+          "latent_rmse_estimate": 0.5500115239395341
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32899621922636535,
+          "latent_rmse_estimate": 0.5735819202401391
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2261051341603282,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3035710593104871,
+          "latent_rmse_estimate": 0.5509728299203938
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33003821684754914,
+          "latent_rmse_estimate": 0.5744895271870055
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.2169234011610954,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30392904376452823,
+          "latent_rmse_estimate": 0.5512975999988828
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33036258994699524,
+          "latent_rmse_estimate": 0.5747717720513033
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.215280525828937,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30328196972357524,
+          "latent_rmse_estimate": 0.5507104227482672
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3297269010521766,
+          "latent_rmse_estimate": 0.5742185133310982
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2144082150790991,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3042550721585105,
+          "latent_rmse_estimate": 0.5515932125747293
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33056584633952424,
+          "latent_rmse_estimate": 0.5749485597334115
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.2146676032367638,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30403666688301284,
+          "latent_rmse_estimate": 0.5513952002720126
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3304795624482135,
+          "latent_rmse_estimate": 0.5748735186527673
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.215822899483727,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.2996416360445921,
+          "latent_rmse_estimate": 0.5473953197138172
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32578421260006596,
+          "latent_rmse_estimate": 0.5707750980903652
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2179274309991306,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.29679125466045947,
+          "latent_rmse_estimate": 0.5447855125280586
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3226802421196835,
+          "latent_rmse_estimate": 0.5680495067506736
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2209534620169848,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.29619909823632007,
+          "latent_rmse_estimate": 0.5442417645094136
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.321986595914242,
+          "latent_rmse_estimate": 0.5674386274428646
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      },
+      "internal_improved": true
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2248941630207777,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.2978651667721737,
+          "latent_rmse_estimate": 0.5457702509043285
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32370327398374094,
+          "latent_rmse_estimate": 0.5689492718896307
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.21613185201595,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.298306464264944,
+          "latent_rmse_estimate": 0.5461743899753484
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3240631393323097,
+          "latent_rmse_estimate": 0.5692654383785386
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2145816686038367,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.29865158882241183,
+          "latent_rmse_estimate": 0.5464902458620939
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.324538194912099,
+          "latent_rmse_estimate": 0.5696825387109026
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.213568141703672,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.2991888688539461,
+          "latent_rmse_estimate": 0.5469815982772602
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3249051715917019,
+          "latent_rmse_estimate": 0.5700045364658968
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 1,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.2145442055622004,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30096074241196386,
+          "latent_rmse_estimate": 0.5485988902759136
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32703589530285054,
+          "latent_rmse_estimate": 0.5718705231980842
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.216626418612882,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3038613586194661,
+          "latent_rmse_estimate": 0.5512362094596709
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3304171707258885,
+          "latent_rmse_estimate": 0.574819250483044
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2187614736437342,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3033539631527311,
+          "latent_rmse_estimate": 0.5507757830122264
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3299155124128157,
+          "latent_rmse_estimate": 0.5743827229407372
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2210490183085205,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3032280559885123,
+          "latent_rmse_estimate": 0.5506614713129223
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3297935324161696,
+          "latent_rmse_estimate": 0.5742765295710505
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2234881972821285,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30348363712680887,
+          "latent_rmse_estimate": 0.5508934898206811
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33005123073595105,
+          "latent_rmse_estimate": 0.5745008535554591
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.2185612558800425,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30611820414499097,
+          "latent_rmse_estimate": 0.5532794991186561
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3328372843815748,
+          "latent_rmse_estimate": 0.5769205182532294
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2160875192191838,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3040034721213338,
+          "latent_rmse_estimate": 0.5513650987515748
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.33055346858424506,
+          "latent_rmse_estimate": 0.5749377954042029
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2146097479660374,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30524879163822527,
+          "latent_rmse_estimate": 0.5524932503101059
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3316044329525053,
+          "latent_rmse_estimate": 0.5758510510127643
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 128,
+      "objective": "residual_noise",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.2147389521798613,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.30413139473308626,
+          "latent_rmse_estimate": 0.5514810919089487
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3305762754258492,
+          "latent_rmse_estimate": 0.5749576292439724
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 0.25,
+      "metrics": {
+        "observed_rmse": 1.215469686196196,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.300369183005474,
+          "latent_rmse_estimate": 0.5480594703182073
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3265399976392108,
+          "latent_rmse_estimate": 0.5714367835895855
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 0.5,
+      "metrics": {
+        "observed_rmse": 1.2170084531656098,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.29772622617290667,
+          "latent_rmse_estimate": 0.5456429475150455
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.32366734142460696,
+          "latent_rmse_estimate": 0.5689176930142066
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 0.75,
+      "metrics": {
+        "observed_rmse": 1.2192582559252556,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.2968213718910145,
+          "latent_rmse_estimate": 0.5448131531920044
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3226805387115763,
+          "latent_rmse_estimate": 0.5680497678122721
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "blend",
+      "alpha": 1.0,
+      "metrics": {
+        "observed_rmse": 1.2222151679462654,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.2976546201597986,
+          "latent_rmse_estimate": 0.5455773273879685
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3235795895001195,
+          "latent_rmse_estimate": 0.5688405659761965
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "noise_head",
+      "ridge": 100.0,
+      "metrics": {
+        "observed_rmse": 1.2164511204946944,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.29932775224304886,
+          "latent_rmse_estimate": 0.5471085378999755
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3251927864186739,
+          "latent_rmse_estimate": 0.5702567723566936
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "noise_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2148362235985912,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.29905752933203694,
+          "latent_rmse_estimate": 0.546861526651891
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3249758912401473,
+          "latent_rmse_estimate": 0.5700665673762559
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "cls_head",
+      "ridge": 1000.0,
+      "metrics": {
+        "observed_rmse": 1.2140560192407126,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.2997260929577983,
+          "latent_rmse_estimate": 0.5474724586294714
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3254617210447497,
+          "latent_rmse_estimate": 0.5704925249683379
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    },
+    {
+      "learning_rate": 3e-05,
+      "epochs": 2,
+      "max_length": 256,
+      "objective": "residual_noise",
+      "route": "cls_head",
+      "ridge": 5000.0,
+      "metrics": {
+        "observed_rmse": 1.2146378401589846,
+        "noise_model_risk": {
+          "latent_mse_estimate": 0.3008409970175813,
+          "latent_rmse_estimate": 0.5484897419438045
+        },
+        "non_explicit_title_risk": {
+          "latent_mse_estimate": 0.3268832985670575,
+          "latent_rmse_estimate": 0.5717370886754308
+        },
+        "rows": 8268,
+        "nonstar_rows": 7447,
+        "explicit_title_proxy_not_used_for_selection": true
+      }
+    }
+  ],
+  "candidate_count": 128
+}

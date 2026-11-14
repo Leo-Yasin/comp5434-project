@@ -1,0 +1,10 @@
+{
+  "passed": 4,
+  "checks": [
+    "correct_inputs_reused",
+    "changed_input_rejected",
+    "changed_model_rejected",
+    "incomplete_cache_rejected"
+  ],
+  "original_cache_unchanged": true
+}

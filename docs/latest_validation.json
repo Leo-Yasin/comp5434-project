@@ -1,14 +1,17 @@
 {
+  "round": 10,
   "date": "2026-11-14",
-  "round": 8,
   "task1_unchanged": true,
-  "task2_tests_passed": 41,
-  "publication_source_tests_passed": 41,
-  "separate_graph_test_passed": 1,
-  "independent_raw_prediction_byte_identical": true,
-  "old_submission_files_verified": 21,
+  "numerical_tests": 42,
+  "new_math_tests": 7,
+  "deterministic_gpu_smoke_passed": true,
+  "publication_tests_passed": true,
+  "independent_raw_feature_prediction_byte_identical": true,
+  "old_submission_files_verified": 23,
   "new_kaggle_score": null,
-  "previous_measured_best": 0.53719,
-  "publication_raw_prediction_byte_identical": true,
-  "separate_publication_graph_test_passed": 1
+  "previous_measured_best": 0.50646,
+  "cache_protocol_tests": 4,
+  "total_tests": 53,
+  "publication_prediction_byte_identical": true,
+  "publication_prediction_sha256": "000952138fb52c63dd65b7bcd859a86401144e8dfb18dbdeeb69983a8891b891"
 }

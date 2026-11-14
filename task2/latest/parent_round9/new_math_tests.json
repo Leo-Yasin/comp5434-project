@@ -1,0 +1,14 @@
+{
+  "tests": 7,
+  "passed": true,
+  "environment": "Python3.12 torch2.6.0+cpu",
+  "cases": [
+    "noise gradient closed form",
+    "fixed-prior posterior Bayes enumeration",
+    "posterior CE hard-example gradient",
+    "frozen encoder weights unchanged",
+    "unfrozen encoder gradient nonzero",
+    "cached CLS head gradient equivalence",
+    "residual initialization and gradient equivalence"
+  ]
+}

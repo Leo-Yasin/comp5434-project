@@ -1,0 +1,9 @@
+{
+  "difference": -0.0029131437002437033,
+  "conditional_95_interval": [
+    -0.00656448652765537,
+    0.0009654711354309119
+  ],
+  "replicates": 500,
+  "limitations": "fixed uniform noise model; reused historical validation; external corpus overlap unknown; not Kaggle score"
+}

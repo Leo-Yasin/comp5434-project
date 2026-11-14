@@ -35,10 +35,41 @@ def make_backend(model,threads,backend):
     return lambda feed:session.run(["logits","cls_embedding"],feed),ort.__version__
 
 
+def reuse_verified_cuda(args,frame):
+    """接受独立标识的FP32 CUDA标题缓存，不伪装为CPU生成的缓存。
+
+    仅支持本项目已经核验的固定英语网络；严格绑定输入/模型/分词器/输出SHA。
+    首次CPU与CUDA的全网数值证据随缓存保存；无该协议时仍执行原CPU流程。
+    """
+    state=args.output.with_suffix(".state.json")
+    if not state.exists():return False
+    proof=json.loads(state.read_text(encoding="utf-8"))
+    if proof.get("protocol")!="verified_cuda_title_fp32_v1":return False
+    began=time.perf_counter();expected_model="99c2c4a7747c0271e3cd1d88e4dac711ac401e3434099e73180f4267a712fdd6"
+    hashes={p.name:sha256(p) for p in args.tokenizer.iterdir() if p.is_file()}
+    if proof.get("labels_used") is not False or proof["reference_onnx_sha256"]!=expected_model or sha256(args.model)!=expected_model:
+        raise ValueError("CUDA冻结缓存不属于已核验的原英语网络。")
+    if proof["input_sha256"]!=sha256(args.input) or proof["tokenizer_sha256"]!=hashes or proof["completed"]!=len(frame) or proof["rows"]!=len(frame) or proof["max_length"]!=128 or proof["dtype"]!="float32":
+        raise ValueError("CUDA冻结缓存输入/分词器/形状不匹配。")
+    audit=proof["cpu_gpu_audit"]
+    if not audit["accepted"] or audit["logit_mae"]>=.001 or audit["cls_relative_rmse"]>=.001 or audit["argmax_agreement"]!=1.:
+        raise ValueError("CUDA冻结缓存的CPU精度证明未通过。")
+    for path,key in [(args.output,"npz_sha256"),(args.output.with_suffix(".logits.npy"),"logits_sha256"),(args.output.with_suffix(".embedding.npy"),"cls_sha256")]:
+        if sha256(path)!=proof[key]:raise ValueError("CUDA冻结缓存输出SHA变化。")
+    saved=np.load(args.output);np.testing.assert_array_equal(saved["id"],frame.id.to_numpy())
+    logits=np.load(args.output.with_suffix(".logits.npy"),mmap_mode="r");cls=np.load(args.output.with_suffix(".embedding.npy"),mmap_mode="r")
+    if logits.shape!=(len(frame),5) or cls.shape!=(len(frame),768) or logits.dtype!=np.float32 or cls.dtype!=np.float32 or not np.isfinite(logits).all() or not np.isfinite(cls).all():raise ValueError("CUDA冻结缓存形状/类型/数值非法。")
+    np.testing.assert_array_equal(saved["logits"],logits)
+    write_json(args.output.with_suffix(".timing.json"),{"rows":len(frame),"seconds":time.perf_counter()-began,"rows_resumed":len(frame),
+        "inference_seconds":0.,"backend":"verified_torch_cuda_cache","new_network_inference":False,"input_sha256":proof["input_sha256"],"model_sha256":expected_model})
+    print("复用已核验FP32 CUDA标题缓存",len(frame),"行；未把GPU来源标作CPU新编码。",flush=True);return True
+
+
 def run(args):
     started=time.perf_counter();frame=pd.read_csv(args.input,keep_default_na=False)
     if args.limit:frame=frame.iloc[:args.limit]
     n=len(frame)
+    if reuse_verified_cuda(args,frame):return
     tokenizer=AutoTokenizer.from_pretrained(args.tokenizer,use_fast=False,local_files_only=True,trust_remote_code=False)
     infer,version=make_backend(args.model,args.threads,args.backend)
     tokenizer_hashes={p.name:sha256(p) for p in args.tokenizer.iterdir() if p.is_file()}

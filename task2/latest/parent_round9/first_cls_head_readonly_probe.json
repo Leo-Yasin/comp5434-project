@@ -1,0 +1,41 @@
+{
+  "choice": {
+    "objective": "forward_noise",
+    "learning_rate": 1e-05,
+    "epochs": 1,
+    "max_length": 128,
+    "route": "cls_head",
+    "ridge": 1000.0
+  },
+  "baseline": {
+    "observed_rmse": 1.2146446573372331,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.3047502423887176,
+      "latent_rmse_estimate": 0.5520418846326043
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.3312985073553885,
+      "latent_rmse_estimate": 0.5755853606159459
+    },
+    "rows": 8268,
+    "nonstar_rows": 7447,
+    "explicit_title_proxy_not_used_for_selection": true
+  },
+  "candidate": {
+    "observed_rmse": 1.2152011440292831,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.30545391600219385,
+      "latent_rmse_estimate": 0.5526788543107053
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.33198825990738584,
+      "latent_rmse_estimate": 0.5761842239313619
+    },
+    "rows": 8268,
+    "nonstar_rows": 7447,
+    "explicit_title_proxy_not_used_for_selection": true
+  },
+  "seconds": 31.671370599999996,
+  "frozen_selection": false,
+  "confirmation_used": false
+}

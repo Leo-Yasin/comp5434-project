@@ -1,0 +1,27 @@
+{
+  "internal_check_only": true,
+  "historical_validation_reuse": true,
+  "ratings_noisy_not_individual_truth": true,
+  "by_token_length": [
+    {
+      "tokens": "1-16",
+      "rows": 3075,
+      "latent_mse_estimate": 0.2347582098566499
+    },
+    {
+      "tokens": "17-32",
+      "rows": 2005,
+      "latent_mse_estimate": 0.2637197736470584
+    },
+    {
+      "tokens": "33-64",
+      "rows": 1796,
+      "latent_mse_estimate": 0.3669227031329057
+    },
+    {
+      "tokens": "65-128",
+      "rows": 1392,
+      "latent_mse_estimate": 0.4382486981118271
+    }
+  ]
+}

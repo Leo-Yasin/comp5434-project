@@ -32,7 +32,7 @@ def word_inputs(frame,parent6):
     return build_text(frame),numeric.astype(np.float32)
 
 
-def predict(frame,semantic,embedding,model,english=None,english_embedding=None):
+def predict(frame,semantic,embedding,model,english=None,english_embedding=None,return_components=False):
     description=json.loads((model/"model.json").read_text(encoding="utf-8"));choice=description["choice"]
     if description["schema_version"]!=1:raise ValueError("未知第八轮模型格式。")
     parent7=model/"previous_model";parent6=parent7/"previous_model"
@@ -65,7 +65,15 @@ def predict(frame,semantic,embedding,model,english=None,english_embedding=None):
         features=np.column_stack(blocks).astype(np.float32)
         changed=predict_channel(features,offset7,dict(np.load(model/"head.npz")))
     result=np.clip(parent7_score+choice["alpha"]*(changed-parent7_score),1,5)
-    return np.clip(np.where(known,result,parent7_score),1,5)
+    result=np.clip(np.where(known,result,parent7_score),1,5)
+    if return_components:
+        # 第九轮需要相应第八轮的完整类别偏置，不能从一个连续评分反推5个logits。
+        # 默认返回保持原行为；当前第八轮包明确为residual且alpha=1。
+        if choice.get("family","residual")!="residual" or choice["alpha"]!=1.:
+            raise ValueError("该第八轮配置没有可直接继承的噪声类别偏置。")
+        offset8=linear_logits(features,offset7,dict(np.load(model/"head.npz")))
+        return result,old[:,:35],offset8,known
+    return result
 
 
 def main():

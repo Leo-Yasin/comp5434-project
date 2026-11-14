@@ -1,0 +1,23 @@
+{
+  "learning_rate": 3e-05,
+  "epochs": 1,
+  "max_length": 256,
+  "objective": "residual_noise",
+  "route": "blend",
+  "alpha": 0.75,
+  "metrics": {
+    "observed_rmse": 1.2209534620169848,
+    "noise_model_risk": {
+      "latent_mse_estimate": 0.29619909823632007,
+      "latent_rmse_estimate": 0.5442417645094136
+    },
+    "non_explicit_title_risk": {
+      "latent_mse_estimate": 0.321986595914242,
+      "latent_rmse_estimate": 0.5674386274428646
+    },
+    "rows": 8268,
+    "nonstar_rows": 7447,
+    "explicit_title_proxy_not_used_for_selection": true
+  },
+  "internal_improved": true
+}

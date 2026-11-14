@@ -1,3 +1,35 @@
+# 当前入口：第十轮冻结标题语义
+
+最新CSV：submissions/latest/task2.csv。第八轮已测0.50646，第十轮待测。
+
+实际结果见根目录docs/Task2第十轮优化结果-20261114.md；原理和命令见docs/第十轮标题语义与复现.md。完整参数另取，放task2/latest/model。
+
+```powershell
+python -m task2.round10_predict --model task2/latest/model --test comp-5434-20261-project-task-2/test.csv --semantic-python .venv-semantic/Scripts/python.exe --english-python .venv-english/Scripts/python.exe --work-dir task2_inference_round10 --output task2_prediction_round10.csv
+```
+
+下方为父轮/历史说明。
+
+---
+
+# Task2当前入口：第九轮最后层适配
+
+最新CSV：submissions/latest/task2.csv。第八轮已测0.50646，第九轮待测。
+
+英语模型前11层冻结，第12层和原分类头用课程评分做噪声训练；本机GPU训练，CPU可预测。
+实际配置/确认结果见根目录docs/Task2第九轮优化结果-20261114.md，理解和复现见docs/第九轮最后层适配与复现.md。
+
+Git不含大型权重，需另取完整model文件夹，放task2/latest/model。英语CPU环境还需官方CPU版torch2.6.0。
+
+```powershell
+python -m task2.round9_predict --model task2/latest/model --test comp-5434-20261-project-task-2/test.csv --semantic-python .venv-semantic/Scripts/python.exe --english-python .venv-english/Scripts/python.exe --work-dir task2_inference_round9 --output task2_prediction_round9.csv
+python -m unittest discover -s task2/tests -v
+```
+
+下方为历史阶段说明，当前入口以上文为准。
+
+---
+
 # Task2当前入口：第八轮（2026-11-14）
 
 最新提交：submissions/latest/task2.csv。第七轮已测0.53719，本轮线上待测；本地风险不是Kaggle分数。
