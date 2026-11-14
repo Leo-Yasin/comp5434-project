@@ -1,0 +1,12 @@
+{
+  "round": 10,
+  "source_commit": "a1d2c1439eddd5603c97c405b5de70b543d3b94d",
+  "source_remote_verified": true,
+  "csv_sha256": "000952138fb52c63dd65b7bcd859a86401144e8dfb18dbdeeb69983a8891b891",
+  "tests": 53,
+  "publication_prediction_byte_identical": true,
+  "task1_unchanged": true,
+  "previous_measured_best": 0.50646,
+  "new_kaggle_score": null,
+  "model_parameters_in_git": false
+}

@@ -13,5 +13,7 @@
   "cache_protocol_tests": 4,
   "total_tests": 53,
   "publication_prediction_byte_identical": true,
-  "publication_prediction_sha256": "000952138fb52c63dd65b7bcd859a86401144e8dfb18dbdeeb69983a8891b891"
+  "publication_prediction_sha256": "000952138fb52c63dd65b7bcd859a86401144e8dfb18dbdeeb69983a8891b891",
+  "source_commit": "a1d2c1439eddd5603c97c405b5de70b543d3b94d",
+  "source_remote_verified": true
 }
