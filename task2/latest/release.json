@@ -1,0 +1,13 @@
+{
+  "byte_identical": true,
+  "sha256": "22ce9107fb2a0708f6e558adc553ebe87755c93f36d03febd8db8554490865cf",
+  "source": "Git publication package",
+  "frozen_embeddings_reused": true,
+  "repository": "https://github.com/Leo-Yasin/comp5434-project",
+  "verified_source_commit": "faf168d53a17b01458b43c83063527932abe9120",
+  "remote_ref_verified": "refs/heads/main",
+  "numeric_tests": 41,
+  "separate_graph_tests": 1,
+  "task1_unchanged": true,
+  "new_kaggle_score": null
+}
