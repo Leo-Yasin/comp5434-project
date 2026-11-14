@@ -1,0 +1,5 @@
+# 当前证据：本地第七轮
+
+protocol、frozen_selection、confirmation、paired_uncertainty、reproduced.timing和verification_manifest为本轮。
+linear_anchor_confirmation_read_only和test_parent_verification是继承第六轮父模型审计，不能当作新模型结果。
+Git不含完整权重；须另取自包含模型包。

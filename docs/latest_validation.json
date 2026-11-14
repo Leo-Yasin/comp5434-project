@@ -1,10 +1,14 @@
 {
   "date": "2026-11-14",
+  "round": 8,
   "task1_unchanged": true,
-  "task2_tests_passed": 37,
-  "publication_source_tests_passed": 37,
+  "task2_tests_passed": 41,
+  "publication_source_tests_passed": 41,
+  "separate_graph_test_passed": 1,
   "independent_raw_prediction_byte_identical": true,
-  "old_submission_files_verified": 19,
+  "old_submission_files_verified": 21,
   "new_kaggle_score": null,
-  "previous_measured_best": 0.53985
+  "previous_measured_best": 0.53719,
+  "publication_raw_prediction_byte_identical": true,
+  "separate_publication_graph_test_passed": 1
 }

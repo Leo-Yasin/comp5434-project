@@ -1,0 +1,10 @@
+{
+  "seconds": 7.0816835,
+  "rows": 10000,
+  "sha256": "5a444fdd2f33cac2614e481ffb3c61882194e60f60185ff97f358dc79980ceee",
+  "independent_raw_csv": true,
+  "training_cache_required": false,
+  "semantic_rows_resumed": 10000,
+  "encoder_sha256": "d6a20ab78edaeff06a63f6cef4f100e625768c98bb401085d3fd89a56008cda1",
+  "shared_encoder_first_independent_pipeline_seconds": 415.5705203
+}

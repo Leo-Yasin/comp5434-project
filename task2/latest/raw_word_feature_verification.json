@@ -1,0 +1,5 @@
+{
+  "rows": 10000,
+  "raw_csv_tfidf_logits_max_abs_error": 0.0,
+  "metadata_float32_exact": true
+}

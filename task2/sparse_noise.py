@@ -7,6 +7,7 @@ import argparse
 import json
 import os
 import time
+from pathlib import Path
 import numpy as np
 from scipy.optimize import minimize
 from distributed import Client, LocalCluster
@@ -18,16 +19,23 @@ from .embedding_heads import noise_loss_gradient
 OUT=ROOT/"task2/outputs/round7_local_20261114"
 
 
-def batch_diagonal(prefixes,mode):
+def training_partition(prefix,mode,representation=None):
+    """可选TF-IDF缓存；省略时逐字保持上一轮原表示和测试接口。"""
+    if representation is None:return load_partition(prefix,mode,"hybrid")
+    from .tfidf_sparse import partition
+    return partition(prefix,mode,representation)
+
+
+def batch_diagonal(prefixes,mode,representation=None):
     """无标签Jacobi尺度：稀疏列平方和用于改善不同词频带来的病态曲率。"""
     diagonal=np.zeros(DIM);rows=0
     for prefix in prefixes:
-        x,y,fit,valid,ids=load_partition(prefix,mode,"hybrid")
+        x,y,fit,valid,ids=training_partition(prefix,mode,representation)
         diagonal+=np.asarray(x.multiply(x).T@fit.astype(float)).ravel();rows+=int(fit.sum())
     return diagonal,rows
 
 
-def batch_objective(prefixes, mode, weights, bias, epsilon):
+def batch_objective(prefixes, mode, weights, bias, epsilon,representation=None):
     """一个真实Dask工作进程顺序遍历自己的分区，只归约训练行。
 
     先计算所有行的logits，再将验证行梯度置0；损失只对训练行求和。
@@ -35,7 +43,7 @@ def batch_objective(prefixes, mode, weights, bias, epsilon):
     """
     gradient=np.zeros_like(weights);gb=np.zeros(5);loss=0.;rows=0
     for prefix in prefixes:
-        x,y,fit,valid,ids=load_partition(prefix,mode,"hybrid")
+        x,y,fit,valid,ids=training_partition(prefix,mode,representation)
         logits=x@weights+bias;q=softmax(logits)
         row=np.arange(len(y));label=y.astype(int)-1
         py=q[row,label];observed=(1-epsilon)*py+epsilon/5
@@ -64,7 +72,9 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument("--mode",choices=["split","full"],required=True)
     parser.add_argument("--iterations",type=int,default=60);parser.add_argument("--pilot",action="store_true")
     parser.add_argument("--scaled",action="store_true");parser.add_argument("--resume",type=str)
-    args=parser.parse_args();folder=OUT/("sparse_pilot" if args.pilot else ("sparse_scaled_" if args.scaled else "sparse_")+args.mode)
+    parser.add_argument("--output",type=Path);parser.add_argument("--ridge",type=float,default=50.)
+    parser.add_argument("--idf-cache",type=Path)
+    args=parser.parse_args();folder=args.output or OUT/("sparse_pilot" if args.pilot else ("sparse_scaled_" if args.scaled else "sparse_")+args.mode)
     folder.mkdir(parents=True,exist_ok=False)
     parts=json.loads((ROOT/"task2/cache/manifest.json").read_text(encoding="utf-8"))["parts"]
     if args.pilot:parts=parts[:3]
@@ -72,14 +82,16 @@ def main():
     weights,bias=initialization(args.mode,eps);start=np.concatenate([weights.ravel(),bias])
     if args.resume:
         source=np.load(args.resume);weights=source["weights"];bias=source["bias"]
-    penalty=np.full((DIM,5),50.);penalty[TITLE_DIM+BODY_DIM]=0.
+    if args.ridge<=0:raise ValueError("L2须为正。")
+    representation=json.loads((args.idf_cache/"manifest.json").read_text(encoding="utf-8")) if args.idf_cache else None
+    penalty=np.full((DIM,5),args.ridge);penalty[TITLE_DIM+BODY_DIM]=0.
     history=[];iterations=[];began=time.perf_counter();worker_pids=set()
     with LocalCluster(n_workers=3,threads_per_worker=1,processes=True,dashboard_address=None,
         memory_limit="1500MB",silence_logs=40,local_directory=str(ROOT/"task2/tmp")) as cluster:
         with Client(cluster) as client:
             scale=np.ones((DIM,1));bias_scale=1.
             if args.scaled:
-                futures=[client.submit(batch_diagonal,[p["prefix"] for p in parts[j::3]],args.mode,pure=False) for j in range(3)]
+                futures=[client.submit(batch_diagonal,[p["prefix"] for p in parts[j::3]],args.mode,representation,pure=False) for j in range(3)]
                 diagonal=np.zeros(DIM);rows=0
                 for future in futures:
                     value,n=future.result();diagonal+=value;rows+=n;future.release()
@@ -90,7 +102,7 @@ def main():
             def objective(flat):
                 started=time.perf_counter();w=flat[:-5].reshape(DIM,5)/scale;b=flat[-5:]/bias_scale
                 wf=client.scatter([w],broadcast=True,hash=False)[0]
-                futures=[client.submit(batch_objective,[p["prefix"] for p in parts[j::3]],args.mode,wf,b,eps,pure=False) for j in range(3)]
+                futures=[client.submit(batch_objective,[p["prefix"] for p in parts[j::3]],args.mode,wf,b,eps,representation,pure=False) for j in range(3)]
                 loss=0.;g=np.zeros_like(w);gb=np.zeros(5);rows=0
                 for future in futures:
                     value,dw,db,n,pid=future.result();loss+=value;g+=dw;gb+=db;rows+=n;worker_pids.add(pid);future.release()
@@ -113,7 +125,7 @@ def main():
                 np.savez_compressed(folder/"weights.npz",weights=fit.x[:-5].reshape(DIM,5)/scale,bias=fit.x[-5:]/bias_scale,epsilon=eps)
                 result={"success":bool(fit.success),"message":str(fit.message),"iterations":int(fit.nit),
                         "objective_evaluations":len(history),"history":history,"worker_pids":sorted(worker_pids)}
-    result.update(seconds=time.perf_counter()-began,scaled=args.scaled,resume=args.resume);write_json(folder/"training.json",result)
+    result.update(seconds=time.perf_counter()-began,scaled=args.scaled,resume=args.resume,ridge=args.ridge,representation=representation);write_json(folder/"training.json",result)
 
 
 if __name__=="__main__":main()

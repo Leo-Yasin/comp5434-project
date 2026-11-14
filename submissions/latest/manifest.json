@@ -20,21 +20,48 @@
     },
     "task2": {
       "rows": 10000,
-      "sha256": "5a444fdd2f33cac2614e481ffb3c61882194e60f60185ff97f358dc79980ceee",
-      "old_submissions_unchanged": true,
-      "old_files_checked": 19,
-      "independent_raw_csv_prediction": true,
+      "sha256": "22ce9107fb2a0708f6e558adc553ebe87755c93f36d03febd8db8554490865cf",
+      "columns": [
+        "id",
+        "rating"
+      ],
+      "sample_id_order_exact": true,
+      "independent_raw_feature_path": true,
       "independent_byte_identical": true,
-      "max_abs_prediction_difference": 0.0,
+      "max_abs_difference": 0.0,
+      "old_files_unchanged": 21,
       "new_kaggle_score": null,
-      "previous_measured_best": 0.53985,
-      "model": "task2\\outputs\\round7_local_20261114\\model_sparse",
-      "source_local_path": "submissions/20261114_task2_round7/task2_sparse_noise_fusion.csv",
+      "previous_measured_best": 0.53719,
+      "model": "task2/outputs/round8_20261114/model",
+      "source_local_path": "submissions/20261114_task2_round8/task2_round8.csv",
       "submitted_file": "submissions/latest/task2.csv",
-      "method": "Dask自主五星噪声词分类与冻结BERT头融合",
       "model_included": false,
-      "tests_passed": 37,
-      "latest_kaggle_score": null
+      "tests_passed": 41,
+      "separate_onnx_graph_test_passed": 1,
+      "latest_kaggle_score": null,
+      "method": "TF-IDF、冻结BERT/英语DeBERTa与自主噪声头",
+      "choice": {
+        "family": "residual",
+        "lexical": 40,
+        "english": true,
+        "ridge": 1000.0,
+        "alpha": 1.0,
+        "metrics": {
+          "observed_rmse": 1.2146446573372331,
+          "noise_model_risk": {
+            "latent_mse_estimate": 0.3047502423887176,
+            "latent_rmse_estimate": 0.5520418846326043
+          },
+          "non_explicit_title_risk": {
+            "latent_mse_estimate": 0.3312985073553885,
+            "latent_rmse_estimate": 0.5755853606159459
+          },
+          "rows": 8268,
+          "nonstar_rows": 7447,
+          "explicit_title_proxy_not_used_for_selection": true
+        },
+        "internal_improved": true
+      }
     }
   }
 }

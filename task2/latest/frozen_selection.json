@@ -1,16 +1,18 @@
 {
-  "iteration": 20,
-  "ridge": 100.0,
+  "family": "residual",
+  "lexical": 40,
+  "english": true,
+  "ridge": 1000.0,
   "alpha": 1.0,
   "metrics": {
-    "observed_rmse": 1.2212299498387207,
+    "observed_rmse": 1.2146446573372331,
     "noise_model_risk": {
-      "latent_mse_estimate": 0.3392327420984866,
-      "latent_rmse_estimate": 0.5824368996711031
+      "latent_mse_estimate": 0.3047502423887176,
+      "latent_rmse_estimate": 0.5520418846326043
     },
     "non_explicit_title_risk": {
-      "latent_mse_estimate": 0.36934973590634657,
-      "latent_rmse_estimate": 0.6077415041827788
+      "latent_mse_estimate": 0.3312985073553885,
+      "latent_rmse_estimate": 0.5755853606159459
     },
     "rows": 8268,
     "nonstar_rows": 7447,

@@ -1,0 +1,290 @@
+{
+  "success": false,
+  "message": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+  "iterations": 40,
+  "objective_evaluations": 44,
+  "history": [
+    {
+      "evaluation": 1,
+      "loss": 7771909.497207761,
+      "rows": 7531189,
+      "seconds": 20.612310400000005
+    },
+    {
+      "evaluation": 2,
+      "loss": 7771082.648453575,
+      "rows": 7531189,
+      "seconds": 23.3223555
+    },
+    {
+      "evaluation": 3,
+      "loss": 7767848.902960764,
+      "rows": 7531189,
+      "seconds": 21.8110073
+    },
+    {
+      "evaluation": 4,
+      "loss": 7756088.368992777,
+      "rows": 7531189,
+      "seconds": 22.4777426
+    },
+    {
+      "evaluation": 5,
+      "loss": 7684852.620864114,
+      "rows": 7531189,
+      "seconds": 24.859593599999997
+    },
+    {
+      "evaluation": 6,
+      "loss": 7635611.764844568,
+      "rows": 7531189,
+      "seconds": 24.32906159999999
+    },
+    {
+      "evaluation": 7,
+      "loss": 7604881.610090956,
+      "rows": 7531189,
+      "seconds": 25.1949501
+    },
+    {
+      "evaluation": 8,
+      "loss": 7590388.996305186,
+      "rows": 7531189,
+      "seconds": 24.921409299999993
+    },
+    {
+      "evaluation": 9,
+      "loss": 7582574.797147827,
+      "rows": 7531189,
+      "seconds": 26.806626499999993
+    },
+    {
+      "evaluation": 10,
+      "loss": 7575170.2553106025,
+      "rows": 7531189,
+      "seconds": 25.372268899999966
+    },
+    {
+      "evaluation": 11,
+      "loss": 7564762.605042631,
+      "rows": 7531189,
+      "seconds": 26.198669499999994
+    },
+    {
+      "evaluation": 12,
+      "loss": 7565236.238893556,
+      "rows": 7531189,
+      "seconds": 26.11353429999997
+    },
+    {
+      "evaluation": 13,
+      "loss": 7561465.89537127,
+      "rows": 7531189,
+      "seconds": 24.78162100000003
+    },
+    {
+      "evaluation": 14,
+      "loss": 7557774.325017442,
+      "rows": 7531189,
+      "seconds": 24.52348810000001
+    },
+    {
+      "evaluation": 15,
+      "loss": 7555850.830312773,
+      "rows": 7531189,
+      "seconds": 21.50764190000001
+    },
+    {
+      "evaluation": 16,
+      "loss": 7553681.347749483,
+      "rows": 7531189,
+      "seconds": 26.056712000000005
+    },
+    {
+      "evaluation": 17,
+      "loss": 7551987.339219794,
+      "rows": 7531189,
+      "seconds": 27.610272899999984
+    },
+    {
+      "evaluation": 18,
+      "loss": 7551040.715958743,
+      "rows": 7531189,
+      "seconds": 23.677212399999974
+    },
+    {
+      "evaluation": 19,
+      "loss": 7549155.907440135,
+      "rows": 7531189,
+      "seconds": 23.196529999999996
+    },
+    {
+      "evaluation": 20,
+      "loss": 7548201.696715151,
+      "rows": 7531189,
+      "seconds": 27.059712900000022
+    },
+    {
+      "evaluation": 21,
+      "loss": 7546982.212793426,
+      "rows": 7531189,
+      "seconds": 24.763216700000044
+    },
+    {
+      "evaluation": 22,
+      "loss": 7545909.772366323,
+      "rows": 7531189,
+      "seconds": 22.98950500000001
+    },
+    {
+      "evaluation": 23,
+      "loss": 7545335.048651387,
+      "rows": 7531189,
+      "seconds": 23.49232089999998
+    },
+    {
+      "evaluation": 24,
+      "loss": 7543943.150431358,
+      "rows": 7531189,
+      "seconds": 36.99910920000002
+    },
+    {
+      "evaluation": 25,
+      "loss": 7543077.71343907,
+      "rows": 7531189,
+      "seconds": 30.61646570000005
+    },
+    {
+      "evaluation": 26,
+      "loss": 7542230.380547426,
+      "rows": 7531189,
+      "seconds": 24.19970710000007
+    },
+    {
+      "evaluation": 27,
+      "loss": 7541518.430665873,
+      "rows": 7531189,
+      "seconds": 21.28461470000002
+    },
+    {
+      "evaluation": 28,
+      "loss": 7540858.600474033,
+      "rows": 7531189,
+      "seconds": 23.070842199999902
+    },
+    {
+      "evaluation": 29,
+      "loss": 7540185.216934114,
+      "rows": 7531189,
+      "seconds": 21.313336700000036
+    },
+    {
+      "evaluation": 30,
+      "loss": 7539695.671582946,
+      "rows": 7531189,
+      "seconds": 21.513902700000017
+    },
+    {
+      "evaluation": 31,
+      "loss": 7539197.451531442,
+      "rows": 7531189,
+      "seconds": 29.5148686
+    },
+    {
+      "evaluation": 32,
+      "loss": 7538225.136427287,
+      "rows": 7531189,
+      "seconds": 31.26449279999997
+    },
+    {
+      "evaluation": 33,
+      "loss": 7537585.908575963,
+      "rows": 7531189,
+      "seconds": 32.27498850000006
+    },
+    {
+      "evaluation": 34,
+      "loss": 7536986.63190065,
+      "rows": 7531189,
+      "seconds": 29.01409870000009
+    },
+    {
+      "evaluation": 35,
+      "loss": 7536576.590553988,
+      "rows": 7531189,
+      "seconds": 29.641188300000067
+    },
+    {
+      "evaluation": 36,
+      "loss": 7536038.666980581,
+      "rows": 7531189,
+      "seconds": 21.346351000000027
+    },
+    {
+      "evaluation": 37,
+      "loss": 7535836.8835359635,
+      "rows": 7531189,
+      "seconds": 22.04796470000008
+    },
+    {
+      "evaluation": 38,
+      "loss": 7534848.595387587,
+      "rows": 7531189,
+      "seconds": 33.07533379999995
+    },
+    {
+      "evaluation": 39,
+      "loss": 7534544.079612593,
+      "rows": 7531189,
+      "seconds": 30.867826000000036
+    },
+    {
+      "evaluation": 40,
+      "loss": 7534093.3781773625,
+      "rows": 7531189,
+      "seconds": 26.20517299999983
+    },
+    {
+      "evaluation": 41,
+      "loss": 7533779.544080679,
+      "rows": 7531189,
+      "seconds": 23.258229999999912
+    },
+    {
+      "evaluation": 42,
+      "loss": 7533312.670310283,
+      "rows": 7531189,
+      "seconds": 20.797702500000014
+    },
+    {
+      "evaluation": 43,
+      "loss": 7532914.78209056,
+      "rows": 7531189,
+      "seconds": 26.307387399999925
+    },
+    {
+      "evaluation": 44,
+      "loss": 7532631.65490377,
+      "rows": 7531189,
+      "seconds": 34.28397999999993
+    }
+  ],
+  "worker_pids": [
+    6436,
+    11964,
+    22084
+  ],
+  "seconds": 1181.0756239,
+  "scaled": true,
+  "resume": "task2/outputs/round7_local_20261114/sparse_scaled_split/weights.npz",
+  "ridge": 5.0,
+  "representation": {
+    "folder": "C:\\Users\\Leo\\.cache\\comp5434-round8\\tfidf",
+    "rows": 7684645,
+    "idf_fit_rows": 7531189,
+    "mode": "split_idf_used_for_validation_and_test",
+    "title_weight": 1.5,
+    "separate_l2": true,
+    "seconds": 41.6519174
+  }
+}

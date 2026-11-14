@@ -1,0 +1,5 @@
+{
+  "rows": 10000,
+  "independent_structure_exact": true,
+  "independent_auxiliary_exact": true
+}

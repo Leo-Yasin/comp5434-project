@@ -1,0 +1,10 @@
+# Python 3.12独立CPU推理环境；不修改原Python3.9/Dask环境。
+numpy==2.2.6
+pandas==3.0.1
+transformers==4.46.3
+sentencepiece==0.2.1
+tokenizers==0.20.3
+onnxruntime==1.23.2
+openvino==2025.3.0
+protobuf==6.33.0
+# 仅重建导出/数值验证时另装onnx==1.19.1及官方CPU版torch==2.6.0。

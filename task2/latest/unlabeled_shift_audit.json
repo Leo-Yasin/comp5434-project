@@ -1,0 +1,24 @@
+{
+  "source_rows": 83047,
+  "test_rows": 10000,
+  "labels_used": false,
+  "domain_auc_heldout": 0.555255466228065,
+  "standardized_mean_difference": {
+    "title_support": 0.01640266189499402,
+    "comment_support": 0.006021490748875126,
+    "pair_support": 0.0104859470999369,
+    "user_product_support": 0.0,
+    "user_parent_support": 0.0031690291173247826,
+    "user_log_count": -0.14997686974842983,
+    "product_log_count": -0.005911473875175336,
+    "parent_log_count": -0.0044109479094282785,
+    "votes": -0.02431397589889599,
+    "purchased": 0.007931850081359038,
+    "comment_length": -0.025941152524212467,
+    "title_length": -0.005623989876820853,
+    "time": -0.006379870884262477,
+    "exclamations": 0.014191507950656029,
+    "empty_body": -0.0019446543325913972
+  },
+  "no_model_selection_or_reweighting_performed": true
+}

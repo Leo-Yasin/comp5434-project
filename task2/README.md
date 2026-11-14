@@ -1,3 +1,22 @@
+# Task2当前入口：第八轮（2026-11-14）
+
+最新提交：submissions/latest/task2.csv。第七轮已测0.53719，本轮线上待测；本地风险不是Kaggle分数。
+
+方案、实际选择和消融见根目录docs/Task2第八轮优化结果-20261114.md；中文复现见docs/第八轮复现说明.md，理解材料见docs/DeBERTa与量化原理说明.md。
+
+Git不含大型权重。向维护者取得本轮整个model文件夹，放到task2/latest/model。
+
+```powershell
+python -m task2.round8_predict --model task2/latest/model --test comp-5434-20261-project-task-2/test.csv --semantic-python .venv-semantic/Scripts/python.exe --english-python .venv-english/Scripts/python.exe --work-dir task2_inference_round8 --output task2_prediction_round8.csv
+python -m unittest discover -s task2/tests -v
+```
+
+新增英语环境使用Python3.12和requirements-english.txt；数值和旧BERT环境仍独立。
+
+下方为旧阶段说明，当前入口以上文为准。
+
+---
+
 # Task2当前入口：本地第七轮（2026-11-14）
 
 当前候选：Dask自主五星噪声词分类与冻结BERT头融合。最新CSV为submissions/latest/task2.csv。

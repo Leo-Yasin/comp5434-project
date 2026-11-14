@@ -7,22 +7,22 @@
 | 任务 | 当前方案 | 最新提交 | 线上状态 |
 |---|---|---|---|
 | Task 1 | 混合高斯/类别分布与提升树、森林概率融合，第二轮最终候选 | [task1.csv](submissions/latest/task1.csv) | 用户报告0.913级别、小幅提升，精确值未提供 |
-| Task 2 | Dask自主五星噪声词分类与冻结BERT头融合，本地第七轮 | [task2.csv](submissions/latest/task2.csv) | 新版待测；第六轮已测RMSE=0.53985 |
+| Task 2 | TF-IDF、冻结BERT/英语DeBERTa与自主噪声头，第八轮 | [task2.csv](submissions/latest/task2.csv) | 第八轮待测；第七轮已测RMSE=0.53719 |
 
 Task 1 使用Macro-F1（越大越好），Task 2 使用RMSE（越小越好）。
-Task 2本地第七轮的噪声风险估计不等于Kaggle成绩。用户转述老师允许外部预训练模型，条件是理解模型；已提供中文原理/答辩指南。
+Task 2第八轮的噪声风险估计不等于Kaggle成绩。用户转述老师允许外部预训练模型，条件是理解模型；已提供中文原理/答辩指南。
 
 ## 队友阅读入口
 
 - [Task 1当前入口与执行说明](task1/README.md)、[模型设计](task1/docs/模型设计.md)、[最近优化结果](docs/第二轮优化结果-20261105.md)。
-- [Task 2当前入口与执行说明](task2/README.md)、[BERT原理与答辩指南](task2/docs/BERT原理与本项目答辩指南.md)、[本地第七轮结果](docs/Task2本地第七轮优化结果-20261114.md)。
+- [Task 2当前入口与执行说明](task2/README.md)、[BERT原理与答辩指南](task2/docs/BERT原理与本项目答辩指南.md)、[第八轮结果](docs/Task2第八轮优化结果-20261114.md)。
 - [上传范围与复现边界](docs/最新上传说明.md)、[实际Kaggle记录](docs/Kaggle测评记录.md)。
 - [两个提交文件的原始来源、行数和SHA-256](submissions/latest/manifest.json)。
 
 ## 包含与不包含什么
 
 包含当前源码、依赖说明、测试、中文阶段文档、两个最新提交CSV，以及Task 1约18MiB的完整推理模型。
-Task 2保留选定配置、验证结果和指纹清单，但数百MB的完整模型包需要从维护者另行获取。
+Task 2保留选定配置、验证结果和指纹清单，但本轮约1.2GB的完整模型包需要从维护者另行获取。
 原始数据、训练缓存、Python环境、课程PDF和旧提交CSV不包含在仓库中。
 
 数据由队友自行下载，放到根目录两个 `comp-5434-20261-project-task-*` 文件夹。

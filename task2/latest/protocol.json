@@ -1,16 +1,18 @@
 {
   "date": "2026-11-14",
-  "variant": "sparse",
-  "known_best_kaggle": 0.53985,
+  "round": 8,
+  "previous_measured_best": 0.53719,
   "new_kaggle_score": null,
-  "outer_validation_rows": 153456,
   "inner_fit": 33437,
   "inner_check": 8268,
   "confirmation": 41342,
   "final_head_fit": 83047,
+  "word_fit_rows": 7531189,
+  "outer_validation_rows": 153456,
   "historical_validation_reuse": true,
-  "two_routes_attempted": true,
   "gpu_used": false,
-  "bert_weights_updated": false,
-  "word_classifier_fit_rows": 7531189
+  "frozen_encoders": true,
+  "english_precision": "f32",
+  "english_used": true,
+  "selection_candidates": 24
 }

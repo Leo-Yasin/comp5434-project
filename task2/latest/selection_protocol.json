@@ -1,0 +1,57 @@
+{
+  "pool": [
+    {
+      "lexical": 20,
+      "english": false,
+      "ridges": [
+        100.0,
+        1000.0
+      ]
+    },
+    {
+      "lexical": 40,
+      "english": false,
+      "ridges": [
+        100.0,
+        1000.0
+      ]
+    },
+    {
+      "lexical": 0,
+      "english": true,
+      "ridges": [
+        1000.0,
+        5000.0
+      ]
+    },
+    {
+      "lexical": 20,
+      "english": true,
+      "ridges": [
+        1000.0
+      ]
+    },
+    {
+      "lexical": 40,
+      "english": true,
+      "ridges": [
+        1000.0
+      ]
+    }
+  ],
+  "alphas": [
+    0.5,
+    1.0
+  ],
+  "choice_before_confirmation": true,
+  "joint_linear_ridges": [
+    1000.0,
+    5000.0
+  ],
+  "joint_mlp_epochs": [
+    6,
+    12
+  ],
+  "known_best_kaggle_user_report": 0.53719,
+  "historical_validation_reuse": true
+}

@@ -1,0 +1,43 @@
+{
+  "repository": "patrickvonplaten/deberta_amazon_reviews_v1",
+  "revision": "06f020e0dbf909570eb886423bd3af256b855546",
+  "license": "MIT",
+  "source_card_incomplete": true,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 1097,
+      "sha256": "8c50acbee54f9046408a5cc7e4f793bd13ff09d90b6da030abca796a8a279aa0"
+    },
+    {
+      "file": "config.json",
+      "bytes": 1171,
+      "sha256": "9445793704369f8b941e86ccd9c2b59949447cb881f366321506806fad282a35"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "bytes": 368,
+      "sha256": "adbe12e192bfc1b3026b2388d9d1bdbdb87a2d4184ecce40ac8aa425c2c6a08b"
+    },
+    {
+      "file": "special_tokens_map.json",
+      "bytes": 156,
+      "sha256": "fcfbeb4e25cd37fb5b8030406394253b245230fd3b552750092bab7d24d827da"
+    },
+    {
+      "file": "added_tokens.json",
+      "bytes": 18,
+      "sha256": "cd0141b19e809eb963a8f8244fad72530233f729e1f6960d281e1fbb3537b2fb"
+    },
+    {
+      "file": "spm.model",
+      "bytes": 2464616,
+      "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd"
+    },
+    {
+      "file": "pytorch_model.bin",
+      "bytes": 737791915,
+      "sha256": "60400f1e7b58071c5692783cb6fcffe264a4a5aaad5741d176e8077bb499f93f"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "rows": 128,
+  "only_internal_training_inputs": true,
+  "labels_used": false,
+  "argmax_agreement": 0.8125,
+  "logit_mae": 0.47030824422836304,
+  "cls_relative_rmse": 0.36263367533683777,
+  "seconds": 73.79672589999973,
+  "accepted": false
+}

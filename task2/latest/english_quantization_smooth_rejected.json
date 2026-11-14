@@ -1,0 +1,14 @@
+{
+  "rows": 128,
+  "only_internal_training_inputs": true,
+  "labels_used": false,
+  "calibration_disjoint": true,
+  "model": "model_smooth_v2_int8.onnx",
+  "batch_size": 16,
+  "sorted_dynamic_length": true,
+  "argmax_agreement": 0.1484375,
+  "logit_mae": 2.0902867317199707,
+  "cls_relative_rmse": 0.929290235042572,
+  "seconds": 21.423842300000615,
+  "accepted": false
+}
