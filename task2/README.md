@@ -1,3 +1,19 @@
+# Task2当前入口：本地第七轮（2026-11-14）
+
+当前候选：Dask自主五星噪声词分类与冻结BERT头融合。最新CSV为submissions/latest/task2.csv。
+此前第六轮线上0.53985，新候选线上未测评。37项测试通过，结果见根目录本地第七轮报告。
+
+完整模型包需维护者提供，放在task2/latest/model；Git不含大型参数、原始数据或训练缓存。
+
+```powershell
+python -m task2.local7_predict --model task2/latest/model --test comp-5434-20261-project-task-2/test.csv --semantic-python .venv-semantic/Scripts/python.exe --work-dir task2_inference_local7 --output task2_prediction_local7.csv
+python -m unittest discover -s task2/tests -v
+```
+
+原理与复现见docs/本地第七轮原理与复现.md。下方为旧阶段说明，当前入口以上文为准。
+
+---
+
 # GitHub最新入口：Task2第六轮（2026-11-08）
 
 当前候选为冻结BERT的768维CLS+自主噪声线性锚点+64维MLP残差头，最新CSV为 `../submissions/latest/task2.csv`。

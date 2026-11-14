@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-08",
+  "snapshot_date": "2026-11-14",
   "only_latest_submission_per_task": true,
   "repository": "https://github.com/Leo-Yasin/comp5434-project",
   "tasks": {
@@ -19,17 +19,22 @@
       }
     },
     "task2": {
-      "source_local_path": "submissions/20261108_task2_round6/task2_cls_adapted.csv",
       "rows": 10000,
-      "sha256": "77fdfbc3c6da404f91ac460d50740ba135a398b4d7d19e7202bf02a1bb50a98f",
+      "sha256": "5a444fdd2f33cac2614e481ffb3c61882194e60f60185ff97f358dc79980ceee",
+      "old_submissions_unchanged": true,
+      "old_files_checked": 19,
+      "independent_raw_csv_prediction": true,
+      "independent_byte_identical": true,
+      "max_abs_prediction_difference": 0.0,
+      "new_kaggle_score": null,
+      "previous_measured_best": 0.53985,
+      "model": "task2\\outputs\\round7_local_20261114\\model_sparse",
+      "source_local_path": "submissions/20261114_task2_round7/task2_sparse_noise_fusion.csv",
       "submitted_file": "submissions/latest/task2.csv",
-      "method": "frozen BERT CLS 768 + custom forward-noise linear anchor and MLP residual",
+      "method": "Dask自主五星噪声词分类与冻结BERT头融合",
       "model_included": false,
-      "latest_kaggle_score": null,
-      "previous_measured_best": 0.54604,
-      "external_model_allowed_teacher_confirmation_user_report": true,
-      "condition": "understand pretrained model",
-      "tests_passed": 29
+      "tests_passed": 37,
+      "latest_kaggle_score": null
     }
   }
 }

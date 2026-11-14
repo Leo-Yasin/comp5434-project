@@ -1,21 +1,9 @@
 {
-  "parent": {
-    "difference": -0.013879662373192159,
-    "conditional_95_interval": [
-      -0.018954756652924384,
-      -0.009230718523592158
-    ],
-    "replicates": 500
-  },
-  "without_cls": {
-    "difference": -0.006046998781394586,
-    "conditional_95_interval": [
-      -0.010161415399074262,
-      -0.00217304646532059
-    ],
-    "replicates": 500
-  },
-  "assumptions": "fixed noise rate and uniform replacement mechanism, fixed model choice",
-  "not_included": "historical selection reuse, wrong noise assumptions, external corpus overlap or distribution shift",
-  "is_kaggle_score": false
+  "difference": -0.006812773434602626,
+  "conditional_95_interval": [
+    -0.009630927736849258,
+    -0.003976945213957493
+  ],
+  "replicates": 500,
+  "limitations": "fixed uniform noise model; reused historical validation; external corpus overlap unknown; not Kaggle score"
 }

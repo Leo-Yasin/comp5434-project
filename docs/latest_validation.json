@@ -1,9 +1,10 @@
 {
-  "date": "2026-11-08",
+  "date": "2026-11-14",
   "task1_unchanged": true,
-  "task2_unit_tests_passed": 29,
-  "independent_raw_csv_prediction_byte_identical": true,
-  "all_old_submissions_unchanged": true,
-  "task2_model_not_in_git": true,
-  "new_task2_kaggle_score": null
+  "task2_tests_passed": 37,
+  "publication_source_tests_passed": 37,
+  "independent_raw_prediction_byte_identical": true,
+  "old_submission_files_verified": 19,
+  "new_kaggle_score": null,
+  "previous_measured_best": 0.53985
 }

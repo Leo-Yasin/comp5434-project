@@ -1,47 +1,16 @@
 {
-  "registered_at": "2026-11-08T10:51:00.088819+08:00",
-  "date_user_facing": "2026-11-08",
-  "known_best_kaggle_user_report": 0.54604,
-  "external_model_allowed_teacher_confirmation_user_report": true,
-  "condition": "must understand the pretrained model",
-  "weights_changed": false,
-  "source_onnx_sha256": "aefeb9b1f7e84d525d0a91f9f06d0d12bb7270186194a421436b728d6be55643",
-  "encoder_sha256": "d6a20ab78edaeff06a63f6cef4f100e625768c98bb401085d3fd89a56008cda1",
-  "source_revision": "fad9b372f770c208d2efaf00d02f2cb3b61ec450",
-  "feature": "last hidden state at CLS, before pooler Dense and Tanh",
-  "dimension": 768,
-  "rows": 83047,
+  "date": "2026-11-14",
+  "variant": "sparse",
+  "known_best_kaggle": 0.53985,
+  "new_kaggle_score": null,
+  "outer_validation_rows": 153456,
   "inner_fit": 33437,
   "inner_check": 8268,
   "confirmation": 41342,
-  "sampling_uses_labels": false,
-  "historical_validation_reuse_disclosed": true,
-  "candidates": {
-    "ridge_residual": [
-      100.0,
-      1000.0
-    ],
-    "noise_linear": [
-      100.0,
-      1000.0
-    ],
-    "noise_mlp": {
-      "linear_anchor_ridge": 1000.0,
-      "hidden": 64,
-      "dropout": 0.2,
-      "learning_rate": 0.001,
-      "l2": 0.001,
-      "epochs": [
-        3,
-        6,
-        12
-      ]
-    }
-  },
-  "mixing_alpha": [
-    0.5,
-    1.0
-  ],
-  "primary_selection_metric": "uniform_noise_adjusted_risk",
-  "note": "all selected records match test known-identity condition; no title-proxy selection"
+  "final_head_fit": 83047,
+  "historical_validation_reuse": true,
+  "two_routes_attempted": true,
+  "gpu_used": false,
+  "bert_weights_updated": false,
+  "word_classifier_fit_rows": 7531189
 }

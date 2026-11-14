@@ -1,21 +1,21 @@
 # COMP5434 Project：Task 1 / Task 2 最新方案
 
-团队仓库：Leo-Yasin/comp5434-project。快照整理日期：2026-11-08。
+团队仓库：Leo-Yasin/comp5434-project。快照整理日期：2026-11-14。
 每个任务只保留一个最新提交CSV；源码为当前快照，包含最新方案所需基础模块与测试。
 历史优化记录保留供队友参考，不重复上传旧提交CSV或旧模型包。
 
 | 任务 | 当前方案 | 最新提交 | 线上状态 |
 |---|---|---|---|
 | Task 1 | 混合高斯/类别分布与提升树、森林概率融合，第二轮最终候选 | [task1.csv](submissions/latest/task1.csv) | 用户报告0.913级别、小幅提升，精确值未提供 |
-| Task 2 | 冻结BERT的CLS768维与自主噪声MLP任务头，第六轮候选 | [task2.csv](submissions/latest/task2.csv) | 第六轮待反馈；此前第五轮已测RMSE=0.54604 |
+| Task 2 | Dask自主五星噪声词分类与冻结BERT头融合，本地第七轮 | [task2.csv](submissions/latest/task2.csv) | 新版待测；第六轮已测RMSE=0.53985 |
 
 Task 1 使用Macro-F1（越大越好），Task 2 使用RMSE（越小越好）。
-Task 2第六轮的本地噪声风险估计不等于Kaggle成绩。用户转述老师允许外部预训练模型，条件是理解模型；已提供中文原理/答辩指南。
+Task 2本地第七轮的噪声风险估计不等于Kaggle成绩。用户转述老师允许外部预训练模型，条件是理解模型；已提供中文原理/答辩指南。
 
 ## 队友阅读入口
 
 - [Task 1当前入口与执行说明](task1/README.md)、[模型设计](task1/docs/模型设计.md)、[最近优化结果](docs/第二轮优化结果-20261105.md)。
-- [Task 2当前入口与执行说明](task2/README.md)、[BERT原理与答辩指南](task2/docs/BERT原理与本项目答辩指南.md)、[第六轮结果](docs/Task2第六轮优化结果-20261108.md)。
+- [Task 2当前入口与执行说明](task2/README.md)、[BERT原理与答辩指南](task2/docs/BERT原理与本项目答辩指南.md)、[本地第七轮结果](docs/Task2本地第七轮优化结果-20261114.md)。
 - [上传范围与复现边界](docs/最新上传说明.md)、[实际Kaggle记录](docs/Kaggle测评记录.md)。
 - [两个提交文件的原始来源、行数和SHA-256](submissions/latest/manifest.json)。
 
