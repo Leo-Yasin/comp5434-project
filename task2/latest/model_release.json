@@ -1,0 +1,17 @@
+{
+  "release_url": "https://github.com/Leo-Yasin/comp5434-project/releases/tag/task2-round10-model-20261115",
+  "tag": "task2-round10-model-20261115",
+  "manifest_url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.manifest.json",
+  "archive_name": "task2-round10-model.zip",
+  "archive_bytes": 1702598475,
+  "archive_sha256": "d7e593daa5e975cbfc3e75c8e5b941ef48f94b2bf776c7e3ea4f6bc445fb945f",
+  "uncompressed_bytes": 1988741231,
+  "parts": 26,
+  "model_files": 66,
+  "models_on_github_releases": true,
+  "parameters_in_git": false,
+  "all_asset_digests_verified": true,
+  "anonymous_download_verified": true,
+  "source_commit": "a1d2c1439eddd5603c97c405b5de70b543d3b94d",
+  "tag_commit": "2ff6786f9a86370b3cf5b024b9041a4d84b47b98"
+}

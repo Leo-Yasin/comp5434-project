@@ -1,3 +1,5 @@
+完整模型现可从[GitHub Release](https://github.com/Leo-Yasin/comp5434-project/releases/tag/task2-round10-model-20261115)下载，自动下载脚本和C盘示例见根目录docs/Task2完整模型下载与使用.md。
+
 # 当前证据：第十轮标题语义
 
 当前8候选冻结、确认、编码精度、耗时及核验文件均为第十轮。第九轮完整证据保存在parent_round9。

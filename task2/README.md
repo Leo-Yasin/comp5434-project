@@ -1,3 +1,15 @@
+# 完整模型下载入口
+
+[GitHub Release](https://github.com/Leo-Yasin/comp5434-project/releases/tag/task2-round10-model-20261115)。详见根目录docs/Task2完整模型下载与使用.md。
+
+```powershell
+python tools/download_task2_model.py --download-dir C:/COMP5434-downloads --destination C:/COMP5434-models/task2-round10
+```
+
+解压后模型为C:/COMP5434-models/task2-round10/model，在预测命令的--model中指定即可。下载及解压建议预留6GB空间。
+
+---
+
 # 当前入口：第十轮冻结标题语义
 
 最新CSV：submissions/latest/task2.csv。第八轮已测0.50646，第十轮待测。

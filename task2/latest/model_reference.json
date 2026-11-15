@@ -1,5 +1,8 @@
 {
   "path": "C:\\Users\\Leo\\.cache\\comp5434-title10\\model",
   "logical_bytes": 1988741231,
-  "parameters_in_git": false
+  "parameters_in_git": false,
+  "release_url": "https://github.com/Leo-Yasin/comp5434-project/releases/tag/task2-round10-model-20261115",
+  "manifest_url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.manifest.json",
+  "models_on_github_releases": true
 }

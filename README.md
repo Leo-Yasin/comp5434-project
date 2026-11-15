@@ -12,6 +12,10 @@
 Task 1 使用Macro-F1（越大越好），Task 2 使用RMSE（越小越好）。
 Task 2第十轮的噪声风险估计不等于Kaggle成绩。用户转述老师允许外部预训练模型，条件是理解模型；已提供中文原理/答辩指南。
 
+## 完整模型已上传GitHub
+
+[下载完整模型Release](https://github.com/Leo-Yasin/comp5434-project/releases/tag/task2-round10-model-20261115)，或按[自动下载与使用说明](docs/Task2完整模型下载与使用.md)操作。模型约1.99GB，以26个分卷分发；工具自动下载、合并、校验全部66文件。普通git clone不包含Release附件。
+
 ## 队友阅读入口
 
 - [Task 1当前入口与执行说明](task1/README.md)、[模型设计](task1/docs/模型设计.md)、[最近优化结果](docs/第二轮优化结果-20261105.md)。
@@ -22,7 +26,7 @@ Task 2第十轮的噪声风险估计不等于Kaggle成绩。用户转述老师�
 ## 包含与不包含什么
 
 包含当前源码、依赖说明、测试、中文阶段文档、两个最新提交CSV，以及Task 1约18MiB的完整推理模型。
-Task 2保留选定配置、验证结果和指纹清单，但本轮约2GB的完整模型包需要从维护者另行获取。
+Task 2完整模型现已上传GitHub Release；普通Git保留源码与指纹，权重通过Release附件下载。
 原始数据、训练缓存、Python环境、课程PDF和旧提交CSV不包含在仓库中。
 
 数据由队友自行下载，放到根目录两个 `comp-5434-20261-project-task-*` 文件夹。

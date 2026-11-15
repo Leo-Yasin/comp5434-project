@@ -39,7 +39,10 @@
       "source_local_path": "submissions/20261114_task2_round10/task2_round10.csv",
       "method": "冻结标题语义与第九轮正文/历史模型的自主噪声残差",
       "model_included": false,
-      "latest_kaggle_score": null
+      "latest_kaggle_score": null,
+      "model_release_url": "https://github.com/Leo-Yasin/comp5434-project/releases/tag/task2-round10-model-20261115",
+      "model_manifest_url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.manifest.json",
+      "model_archive_sha256": "d7e593daa5e975cbfc3e75c8e5b941ef48f94b2bf776c7e3ea4f6bc445fb945f"
     }
   }
 }

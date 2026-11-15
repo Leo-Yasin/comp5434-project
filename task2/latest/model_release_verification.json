@@ -1,0 +1,176 @@
+{
+  "url": "https://github.com/Leo-Yasin/comp5434-project/releases/tag/task2-round10-model-20261115",
+  "tag": "task2-round10-model-20261115",
+  "assets": [
+    {
+      "name": "task2-round10-model.manifest.json",
+      "bytes": 18009,
+      "sha256": "e10250b77e48702532c4cc2b25e119750d765d2cbfd0ce5176e6d551ce7c2dc9",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.manifest.json"
+    },
+    {
+      "name": "task2-round10-model.zip.part001",
+      "bytes": 67108864,
+      "sha256": "756f2ead011f4a4d6606491d0bd41075d87e3e8fc1495be51e4518c5c9e100b1",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part001"
+    },
+    {
+      "name": "task2-round10-model.zip.part002",
+      "bytes": 67108864,
+      "sha256": "c95d98a663b49d6794e5c957d17c2c0fe053bd9abb32889512ec8627d896636f",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part002"
+    },
+    {
+      "name": "task2-round10-model.zip.part003",
+      "bytes": 67108864,
+      "sha256": "c16f59feaaf811fdba5b5811dd508687eaa775bb1d8a99c11e5386cb379a1d4f",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part003"
+    },
+    {
+      "name": "task2-round10-model.zip.part004",
+      "bytes": 67108864,
+      "sha256": "9d1e3e722772180bfcaccffe8d80bba5ad8a5c6a075202970398a8b140488403",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part004"
+    },
+    {
+      "name": "task2-round10-model.zip.part005",
+      "bytes": 67108864,
+      "sha256": "f120255865ea4f57577ad4df763b40fb292945ba504d8533c059f8166969701f",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part005"
+    },
+    {
+      "name": "task2-round10-model.zip.part006",
+      "bytes": 67108864,
+      "sha256": "258b65c50ad3b7798e0d26af8144c164d11ffd07d044ceb4b88001608a939411",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part006"
+    },
+    {
+      "name": "task2-round10-model.zip.part007",
+      "bytes": 67108864,
+      "sha256": "024c96ce2d0e4e468205af2df804eafbc34323fca6958bad92b3368ac00b7c96",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part007"
+    },
+    {
+      "name": "task2-round10-model.zip.part008",
+      "bytes": 67108864,
+      "sha256": "fc8206fe575795e5fcdd169b20cb82a00828be7d268d06a4d79bf4f3dda73072",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part008"
+    },
+    {
+      "name": "task2-round10-model.zip.part009",
+      "bytes": 67108864,
+      "sha256": "a087f9e11e6bc3128188893a21e79d25efcdb9bf3340bccd317d1f1173f57e7a",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part009"
+    },
+    {
+      "name": "task2-round10-model.zip.part010",
+      "bytes": 67108864,
+      "sha256": "c21a9cd303117b8e2510761584201578e467e819550be1b4891aa12ca412ef23",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part010"
+    },
+    {
+      "name": "task2-round10-model.zip.part011",
+      "bytes": 67108864,
+      "sha256": "8490547d27a4e1537189748abb381021cf8cdd9b5fe409af3c763ec2455bdca8",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part011"
+    },
+    {
+      "name": "task2-round10-model.zip.part012",
+      "bytes": 67108864,
+      "sha256": "b1b1e8af9bccb251ab41ce1126fd20bed0f79230158646d64b172dfba489e253",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part012"
+    },
+    {
+      "name": "task2-round10-model.zip.part013",
+      "bytes": 67108864,
+      "sha256": "543226ab97c3db5451129e344e9a7fec0037be60932b558b0c0237db1bfd83ee",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part013"
+    },
+    {
+      "name": "task2-round10-model.zip.part014",
+      "bytes": 67108864,
+      "sha256": "f320204a663f7eb26ea16753b1af455201e1da36745f2ea5d7d4679c10600f36",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part014"
+    },
+    {
+      "name": "task2-round10-model.zip.part015",
+      "bytes": 67108864,
+      "sha256": "8051179afa3b044f4e293413694a6ff2a5f84241523432ac1f1f4e3b433bee0b",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part015"
+    },
+    {
+      "name": "task2-round10-model.zip.part016",
+      "bytes": 67108864,
+      "sha256": "689ca22f8e1469194cd28a38a1eccb64d9790dcfe2e7cbc3f23d68732204c93d",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part016"
+    },
+    {
+      "name": "task2-round10-model.zip.part017",
+      "bytes": 67108864,
+      "sha256": "de5b74fc01db1013d3a0627b7d75184d37f28ccad3540786aa7d638bbe470a14",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part017"
+    },
+    {
+      "name": "task2-round10-model.zip.part018",
+      "bytes": 67108864,
+      "sha256": "16e85753d29cb471b3bb854c73a5ad6c013059211c614e04506850c27899db13",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part018"
+    },
+    {
+      "name": "task2-round10-model.zip.part019",
+      "bytes": 67108864,
+      "sha256": "cc6e7ca6cc05fb0f8d82adf4074fd5608aaa2166f5cc46ed5c1a55f776aff3fe",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part019"
+    },
+    {
+      "name": "task2-round10-model.zip.part020",
+      "bytes": 67108864,
+      "sha256": "60bf5eece788f0d93083c61bf8a450b5cb87ece3ee93a9bb566e199c5ed36732",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part020"
+    },
+    {
+      "name": "task2-round10-model.zip.part021",
+      "bytes": 67108864,
+      "sha256": "179da71c82cf7ee6aee056ea8653963efb0e9c365c0b5519768e34e391e1707a",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part021"
+    },
+    {
+      "name": "task2-round10-model.zip.part022",
+      "bytes": 67108864,
+      "sha256": "c98921b6795f6b809f596dbdeb32256263035584975918be6bc3cb34ac88ee9a",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part022"
+    },
+    {
+      "name": "task2-round10-model.zip.part023",
+      "bytes": 67108864,
+      "sha256": "edc1344b9e7bdd062dfd8e6fa0e422e8238015cb0d920226f75a4cb3026799bc",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part023"
+    },
+    {
+      "name": "task2-round10-model.zip.part024",
+      "bytes": 67108864,
+      "sha256": "811966b83784c52395af346eef0546a49b7d6d56578747b927a4d8fe72c3cc4a",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part024"
+    },
+    {
+      "name": "task2-round10-model.zip.part025",
+      "bytes": 67108864,
+      "sha256": "db3687596d0d5c8303c3c1b671c6cb2c0efb40f514f91dc8409760485cf54c7c",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part025"
+    },
+    {
+      "name": "task2-round10-model.zip.part026",
+      "bytes": 24876875,
+      "sha256": "91e30a7c1010409c8da064c224cf31c463bf7b58388e22c9459a61a7190b5260",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.part026"
+    },
+    {
+      "name": "task2-round10-model.zip.sha256",
+      "bytes": 91,
+      "sha256": "8dc7d7f6c3c98240c9cbc5b75a7808e5a303da697a0bd18b6a6bd87bb83e5ec0",
+      "url": "https://github.com/Leo-Yasin/comp5434-project/releases/download/task2-round10-model-20261115/task2-round10-model.zip.sha256"
+    }
+  ],
+  "model_manifest_verified": true,
+  "all_asset_digests_verified": true
+}
