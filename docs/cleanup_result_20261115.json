@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "deleted_targets": 454,
+  "logical_deleted_bytes": 44685947407,
+  "disk_free_before": {
+    "C": 11534090240,
+    "F": 1344131072
+  },
+  "disk_free_after": {
+    "C": 38328217600,
+    "F": 15355486208
+  },
+  "reclaimed_bytes": {
+    "C": 26794127360,
+    "F": 14011355136
+  },
+  "final_model": "C:\\Users\\Leo\\.cache\\comp5434-title10\\model",
+  "final_model_files_verified": 66,
+  "protected_files_verified": 60,
+  "preserved_runtime_environments": [
+    "C:\\Users\\Leo\\.cache\\comp5434-english\\venv",
+    "C:\\Users\\Leo\\.cache\\comp5434-round5\\venv"
+  ],
+  "training_reproduction": "historical caches/checkpoints removed by user request; inference weights/source/docs/submissions/raw data retained"
+}

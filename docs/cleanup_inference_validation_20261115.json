@@ -1,0 +1,9 @@
+{
+  "fresh_rows": 8,
+  "prediction_after_cleanup_passed": true,
+  "no_previous_inference_cache": true,
+  "rating_min": 1.9543404968,
+  "rating_max": 4.9805292249,
+  "subset_vs_full_submission_max_difference": 0.06023010430000042,
+  "comparison_scope": "subset changes existing dynamic-quantized BERT batch composition; not an equality test against full-10000-row submission; final model hashes and submitted CSV unchanged"
+}
