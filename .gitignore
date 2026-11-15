@@ -5,6 +5,7 @@
 # 大型训练输出、稀疏缓存、模型参数与原始逐行审计不纳入 Git。
 # 对团队有用的阶段结论已汇总在 docs/；最终 CSV 和指纹保留在 submissions/。
 /task1/outputs/
+/task1_old/outputs/
 /task2/outputs/
 /task2/cache/
 /task2/audit*/
