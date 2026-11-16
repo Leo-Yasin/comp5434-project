@@ -12,12 +12,16 @@ python tools/download_task2_model.py --download-dir C:/COMP5434-downloads --dest
 
 # 当前入口：第十轮冻结标题语义
 
-最新CSV：submissions/latest/task2.csv。第八轮已测0.50646，第十轮待测。
+最新CSV：submissions/latest/task2.csv。用户反馈第十轮Kaggle RMSE=0.49880（2026-11-16补记）。
+朋友macOS M1冷启动预测存在实质差异，正在按[排查记录](../docs/Task2跨机复现差异排查-20261116.md)验证。
+Windows x64英语完整推理依赖使用requirements-round10-english-win.txt，最后层也需要torch。
+原Windows三环境10000行完整冷启动已完成，平均评分差2.08e-8、最大2.44e-6，未出现M1端的较大偏差。
+请按[交付老师的复现步骤](../docs/Task2交付老师的复现步骤.md)准备环境、预测并生成核验报告。
 
 实际结果见根目录docs/Task2第十轮优化结果-20261114.md；原理和命令见docs/第十轮标题语义与复现.md。完整参数另取，放task2/latest/model。
 
 ```powershell
-python -m task2.round10_predict --model task2/latest/model --test comp-5434-20261-project-task-2/test.csv --semantic-python .venv-semantic/Scripts/python.exe --english-python .venv-english/Scripts/python.exe --work-dir task2_inference_round10 --output task2_prediction_round10.csv
+python tools/run_round10_checked.py --model task2/latest/model --test comp-5434-20261-project-task-2/test.csv --semantic-python .venv-semantic/Scripts/python.exe --english-python .venv-english/Scripts/python.exe --work-dir task2_inference_round10_checked --output task2_prediction_round10.csv
 ```
 
 下方为父轮/历史说明。

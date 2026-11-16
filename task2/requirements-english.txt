@@ -7,4 +7,5 @@ tokenizers==0.20.3
 onnxruntime==1.23.2
 openvino==2025.3.0
 protobuf==6.33.0
-# 仅重建导出/数值验证时另装onnx==1.19.1及官方CPU版torch==2.6.0。
+# 第八轮英语编码仅需上述依赖；第九/十轮的最后层推理也必须安装官方CPU版torch==2.6.0。
+# Windows x64第十轮使用requirements-round10-english-win.txt补齐torch；重建导出另需onnx==1.19.1。

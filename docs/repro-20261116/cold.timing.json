@@ -1,0 +1,9 @@
+{
+  "rows": 10000,
+  "seconds": 2351.0749920999997,
+  "sha256": "d6f72d86a5059a3f72d8aa00adf6f76d86ff8f6375abfa78572d61a3378a64db",
+  "title_rows_resumed": 0,
+  "prefix_rows_resumed": 0,
+  "top_threads": 4,
+  "training_cache_required": false
+}

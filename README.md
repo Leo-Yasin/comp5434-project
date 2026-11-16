@@ -7,10 +7,15 @@
 | 任务 | 当前方案 | 最新提交 | 线上状态 |
 |---|---|---|---|
 | Task 1 | 混合高斯/类别分布与提升树、森林概率融合，第二轮最终候选 | [task1.csv](submissions/latest/task1.csv) | 用户报告0.913级别、小幅提升，精确值未提供 |
-| Task 2 | 冻结标题语义与正文/历史噪声残差融合，第十轮 | [task2.csv](submissions/latest/task2.csv) | 第十轮待测；第八轮已测RMSE=0.50646 |
+| Task 2 | 冻结标题语义与正文/历史噪声残差融合，第十轮 | [task2.csv](submissions/latest/task2.csv) | 用户反馈RMSE=0.49880；跨机冷启动差异正在排查 |
 
 Task 1 使用Macro-F1（越大越好），Task 2 使用RMSE（越小越好）。
 Task 2第十轮的噪声风险估计不等于Kaggle成绩。用户转述老师允许外部预训练模型，条件是理解模型；已提供中文原理/答辩指南。
+
+2026-11-16：朋友macOS M1预测与参考CSV有实质差异，见[复现排查与当前验收状态](docs/Task2跨机复现差异排查-20261116.md)。
+此前逐字节一致检查复用了冻结表示，不能视为跨机完整冷启动证明；新输出不能直接沿用旧CSV分数。
+本次原Windows环境10000行从零编码已完成，耗时39.18分钟，平均评分差2.08e-8、最大2.44e-6。
+按[交付老师的复现步骤](docs/Task2交付老师的复现步骤.md)运行；[原机验收指标](docs/repro-20261116/acceptance.json)和[逐阶段环境诊断](docs/repro-20261116/original_diagnostics.json)已保留。
 
 ## 完整模型已上传GitHub
 

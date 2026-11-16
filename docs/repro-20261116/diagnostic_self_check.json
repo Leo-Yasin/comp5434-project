@@ -1,0 +1,284 @@
+{
+  "test_sha256_equal": true,
+  "model_manifest_sha256_equal": true,
+  "model_mismatches": {
+    "left": [],
+    "right": []
+  },
+  "different_source_files": [],
+  "environments": {
+    "numeric": {},
+    "semantic": {},
+    "english": {}
+  },
+  "stages": {
+    "embedding": {
+      "state_equal": true,
+      "values": {
+        "common_probe_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          7913,
+          899,
+          7826,
+          4190,
+          8379,
+          2492,
+          8596,
+          6819,
+          7341,
+          5537,
+          2286,
+          8139,
+          5379,
+          1632,
+          9565,
+          7422
+        ],
+        "logits": {
+          "scalars": 160,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0,
+          "root_mean_square_difference": 0.0
+        },
+        "cls": {
+          "scalars": 24576,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0,
+          "root_mean_square_difference": 0.0
+        }
+      }
+    },
+    "english": {
+      "state_equal": true,
+      "values": {
+        "common_probe_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          7913,
+          899,
+          7826,
+          4190,
+          8379,
+          2492,
+          8596,
+          6819,
+          7341,
+          5537,
+          2286,
+          8139,
+          5379,
+          1632,
+          9565,
+          7422
+        ],
+        "logits": {
+          "scalars": 160,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0,
+          "root_mean_square_difference": 0.0
+        },
+        "cls": {
+          "scalars": 24576,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0,
+          "root_mean_square_difference": 0.0
+        }
+      }
+    },
+    "adapted": {
+      "state_equal": true,
+      "values": {
+        "common_probe_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          7913,
+          899,
+          7826,
+          4190,
+          8379,
+          2492,
+          8596,
+          6819,
+          7341,
+          5537,
+          2286,
+          8139,
+          5379,
+          1632,
+          9565,
+          7422
+        ],
+        "logits": {
+          "scalars": 160,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0,
+          "root_mean_square_difference": 0.0
+        }
+      }
+    },
+    "title": {
+      "state_equal": true,
+      "values": {
+        "common_probe_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          7913,
+          899,
+          7826,
+          4190,
+          8379,
+          2492,
+          8596,
+          6819,
+          7341,
+          5537,
+          2286,
+          8139,
+          5379,
+          1632,
+          9565,
+          7422
+        ],
+        "logits": {
+          "scalars": 160,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0,
+          "root_mean_square_difference": 0.0
+        },
+        "cls": {
+          "scalars": 24576,
+          "mean_absolute_difference": 0.0,
+          "maximum_absolute_difference": 0.0,
+          "root_mean_square_difference": 0.0
+        }
+      }
+    }
+  },
+  "parent_values": {
+    "common_probe_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      7913,
+      899,
+      7826,
+      4190,
+      8379,
+      2492,
+      8596,
+      6819,
+      7341,
+      5537,
+      2286,
+      8139,
+      5379,
+      1632,
+      9565,
+      7422
+    ],
+    "prediction": {
+      "scalars": 32,
+      "mean_absolute_difference": 0.0,
+      "maximum_absolute_difference": 0.0,
+      "root_mean_square_difference": 0.0
+    }
+  },
+  "prediction_comparisons": {
+    "left": {
+      "rows": 10000,
+      "matched_ids": 10000,
+      "mean_absolute_difference": 2.079831000674215e-08,
+      "maximum_absolute_difference": 2.4357999999224944e-06,
+      "prediction_sha256": "d6f72d86a5059a3f72d8aa00adf6f76d86ff8f6375abfa78572d61a3378a64db",
+      "reference_sha256": "000952138fb52c63dd65b7bcd859a86401144e8dfb18dbdeeb69983a8891b891",
+      "reference_rows": 10000,
+      "unique_prediction_ids": 10000,
+      "unique_reference_ids": 10000,
+      "id_order_equal": true,
+      "root_mean_square_difference": 7.342481637440855e-08
+    },
+    "right": {
+      "rows": 10000,
+      "matched_ids": 10000,
+      "mean_absolute_difference": 2.079831000674215e-08,
+      "maximum_absolute_difference": 2.4357999999224944e-06,
+      "prediction_sha256": "d6f72d86a5059a3f72d8aa00adf6f76d86ff8f6375abfa78572d61a3378a64db",
+      "reference_sha256": "000952138fb52c63dd65b7bcd859a86401144e8dfb18dbdeeb69983a8891b891",
+      "reference_rows": 10000,
+      "unique_prediction_ids": 10000,
+      "unique_reference_ids": 10000,
+      "id_order_equal": true,
+      "root_mean_square_difference": 7.342481637440855e-08
+    }
+  }
+}

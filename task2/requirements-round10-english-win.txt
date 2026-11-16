@@ -1,0 +1,5 @@
+# 原始Round10的Windows x64 / Python 3.12 CPU推理环境。
+# 不适用于macOS ARM；不应为解决安装失败而随意升级模型运行库。
+-r requirements-english.txt
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.6.0+cpu

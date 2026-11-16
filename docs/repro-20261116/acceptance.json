@@ -1,0 +1,12 @@
+{
+  "rows": 10000,
+  "id_order_equal": true,
+  "prediction_mae": 2.079831000674215e-08,
+  "prediction_max": 2.4357999999224944e-06,
+  "prediction_rms": 7.342481637440827e-08,
+  "csv_bytes_equal": false,
+  "parent9_mae": 2.5037427464624784e-11,
+  "parent9_max": 4.999911595859885e-11,
+  "finite": true,
+  "in_range": true
+}

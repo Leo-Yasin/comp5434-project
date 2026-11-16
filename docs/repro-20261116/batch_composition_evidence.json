@@ -1,0 +1,10 @@
+{
+  "logits": {
+    "mean_absolute_difference": 0.10766105353832245,
+    "maximum_absolute_difference": 0.2739121913909912
+  },
+  "cls": {
+    "mean_absolute_difference": 0.07598096877336502,
+    "maximum_absolute_difference": 0.3837628662586212
+  }
+}
